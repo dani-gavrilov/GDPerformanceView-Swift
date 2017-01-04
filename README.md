@@ -1,5 +1,5 @@
 #GDPerformanceView-Swift
-Shows FPS, CPU usage, app and iOS versions above the status bar.
+Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS and CPU usage via delegate.
 
 ![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view.PNG?raw=true "Example PNG")
 ![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_2.PNG?raw=true "Example PNG")
@@ -15,7 +15,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 1.0.0'
+	pod 'GDPerformanceView-Swift', '~> 1.0.2'
 end
 ```
 
