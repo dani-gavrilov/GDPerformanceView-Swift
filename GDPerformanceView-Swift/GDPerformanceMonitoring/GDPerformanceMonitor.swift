@@ -22,7 +22,7 @@
 
 import UIKit
 
-class GDPerformanceMonitor: NSObject {
+public class GDPerformanceMonitor: NSObject {
     
     // MARK: Public Properties
     

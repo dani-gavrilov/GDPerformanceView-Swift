@@ -20,6 +20,6 @@
 // THE SOFTWARE.
 //
 
-protocol GDPerformanceMonitorDelegate: class {
+public protocol GDPerformanceMonitorDelegate: class {
     func performanceMonitorDidReport(fpsValue: Float, cpuValue: Float)
 }
