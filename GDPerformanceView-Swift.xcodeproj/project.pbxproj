@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42630D191E244518005AAE56 /* GDPerformanceViewIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42630D171E244518005AAE56 /* GDPerformanceViewIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42630D1C1E244518005AAE56 /* GDPerformanceViewIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42630D151E244518005AAE56 /* GDPerformanceViewIOS.framework */; };
-		42630D1D1E244518005AAE56 /* GDPerformanceViewIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42630D151E244518005AAE56 /* GDPerformanceViewIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42630D211E24452B005AAE56 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
-		42630D221E24452B005AAE56 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
-		42630D231E24452B005AAE56 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42630D241E24452B005AAE56 /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
+		42630D301E244840005AAE56 /* GDPerformanceVIew-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42630D2E1E244840005AAE56 /* GDPerformanceVIew-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42630D331E244840005AAE56 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42630D2C1E244840005AAE56 /* GDPerformanceView.framework */; };
+		42630D341E244840005AAE56 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42630D2C1E244840005AAE56 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42630D381E2448B0005AAE56 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
+		42630D391E2448B0005AAE56 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
+		42630D3A1E2448B0005AAE56 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
+		42630D3B1E2448B0005AAE56 /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		428FE57F1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06E71E1D18C400A5C840 /* AppDelegate.swift */; };
 		42AD06F41E1D18C400A5C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E81E1D18C400A5C840 /* Assets.xcassets */; };
@@ -25,12 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42630D1A1E244518005AAE56 /* PBXContainerItemProxy */ = {
+		42630D311E244840005AAE56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4237B6D01E0FE2290059FF8B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 42630D141E244518005AAE56;
-			remoteInfo = GDPerformanceViewIOS;
+			remoteGlobalIDString = 42630D2B1E244840005AAE56;
+			remoteInfo = "GDPerformanceVIew-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42630D1D1E244518005AAE56 /* GDPerformanceViewIOS.framework in Embed Frameworks */,
+				42630D341E244840005AAE56 /* GDPerformanceView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,9 +50,9 @@
 
 /* Begin PBXFileReference section */
 		4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDPerformanceView-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42630D151E244518005AAE56 /* GDPerformanceViewIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceViewIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42630D171E244518005AAE56 /* GDPerformanceViewIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDPerformanceViewIOS.h; sourceTree = "<group>"; };
-		42630D181E244518005AAE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42630D2C1E244840005AAE56 /* GDPerformanceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42630D2E1E244840005AAE56 /* GDPerformanceVIew-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceVIew-iOS.h"; sourceTree = "<group>"; };
+		42630D2F1E244840005AAE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPerformanceMonitorDelegate.swift; sourceTree = "<group>"; };
 		42AD06E71E1D18C400A5C840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42AD06E81E1D18C400A5C840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,11 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42630D1C1E244518005AAE56 /* GDPerformanceViewIOS.framework in Frameworks */,
+				42630D331E244840005AAE56 /* GDPerformanceView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42630D111E244518005AAE56 /* Frameworks */ = {
+		42630D281E244840005AAE56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				42AD06E61E1D18C400A5C840 /* GDPerformanceView-Swift */,
-				42630D161E244518005AAE56 /* GDPerformanceViewIOS */,
+				42630D2D1E244840005AAE56 /* GDPerformanceVIew-iOS */,
 				4237B6D91E0FE22A0059FF8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,18 +96,18 @@
 			isa = PBXGroup;
 			children = (
 				4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */,
-				42630D151E244518005AAE56 /* GDPerformanceViewIOS.framework */,
+				42630D2C1E244840005AAE56 /* GDPerformanceView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42630D161E244518005AAE56 /* GDPerformanceViewIOS */ = {
+		42630D2D1E244840005AAE56 /* GDPerformanceVIew-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				42630D171E244518005AAE56 /* GDPerformanceViewIOS.h */,
-				42630D181E244518005AAE56 /* Info.plist */,
+				42630D2E1E244840005AAE56 /* GDPerformanceVIew-iOS.h */,
+				42630D2F1E244840005AAE56 /* Info.plist */,
 			);
-			path = GDPerformanceViewIOS;
+			path = "GDPerformanceVIew-iOS";
 			sourceTree = "<group>";
 		};
 		42AD06E61E1D18C400A5C840 /* GDPerformanceView-Swift */ = {
@@ -137,11 +137,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		42630D121E244518005AAE56 /* Headers */ = {
+		42630D291E244840005AAE56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42630D191E244518005AAE56 /* GDPerformanceViewIOS.h in Headers */,
+				42630D301E244840005AAE56 /* GDPerformanceVIew-iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,29 +160,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				42630D1B1E244518005AAE56 /* PBXTargetDependency */,
+				42630D321E244840005AAE56 /* PBXTargetDependency */,
 			);
 			name = "GDPerformanceView-Swift";
 			productName = "GDPerfomanceView-Swift";
 			productReference = 4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		42630D141E244518005AAE56 /* GDPerformanceViewIOS */ = {
+		42630D2B1E244840005AAE56 /* GDPerformanceVIew-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42630D1E1E244518005AAE56 /* Build configuration list for PBXNativeTarget "GDPerformanceViewIOS" */;
+			buildConfigurationList = 42630D351E244840005AAE56 /* Build configuration list for PBXNativeTarget "GDPerformanceVIew-iOS" */;
 			buildPhases = (
-				42630D101E244518005AAE56 /* Sources */,
-				42630D111E244518005AAE56 /* Frameworks */,
-				42630D121E244518005AAE56 /* Headers */,
-				42630D131E244518005AAE56 /* Resources */,
+				42630D271E244840005AAE56 /* Sources */,
+				42630D281E244840005AAE56 /* Frameworks */,
+				42630D291E244840005AAE56 /* Headers */,
+				42630D2A1E244840005AAE56 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GDPerformanceViewIOS;
-			productName = GDPerformanceViewIOS;
-			productReference = 42630D151E244518005AAE56 /* GDPerformanceViewIOS.framework */;
+			name = "GDPerformanceVIew-iOS";
+			productName = "GDPerformanceVIew-iOS";
+			productReference = 42630D2C1E244840005AAE56 /* GDPerformanceView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 						DevelopmentTeam = RU64C364MT;
 						ProvisioningStyle = Automatic;
 					};
-					42630D141E244518005AAE56 = {
+					42630D2B1E244840005AAE56 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RU64C364MT;
 						ProvisioningStyle = Automatic;
@@ -221,7 +221,7 @@
 			projectRoot = "";
 			targets = (
 				4237B6D71E0FE2290059FF8B /* GDPerformanceView-Swift */,
-				42630D141E244518005AAE56 /* GDPerformanceViewIOS */,
+				42630D2B1E244840005AAE56 /* GDPerformanceVIew-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +237,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42630D131E244518005AAE56 /* Resources */ = {
+		42630D2A1E244840005AAE56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,24 +259,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42630D101E244518005AAE56 /* Sources */ = {
+		42630D271E244840005AAE56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42630D211E24452B005AAE56 /* GDMarginLabel.swift in Sources */,
-				42630D221E24452B005AAE56 /* GDPerformanceMonitor.swift in Sources */,
-				42630D231E24452B005AAE56 /* GDPerformanceView.swift in Sources */,
-				42630D241E24452B005AAE56 /* GDPerformanceMonitorDelegate.swift in Sources */,
+				42630D381E2448B0005AAE56 /* GDMarginLabel.swift in Sources */,
+				42630D391E2448B0005AAE56 /* GDPerformanceMonitor.swift in Sources */,
+				42630D3A1E2448B0005AAE56 /* GDPerformanceView.swift in Sources */,
+				42630D3B1E2448B0005AAE56 /* GDPerformanceMonitorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		42630D1B1E244518005AAE56 /* PBXTargetDependency */ = {
+		42630D321E244840005AAE56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 42630D141E244518005AAE56 /* GDPerformanceViewIOS */;
-			targetProxy = 42630D1A1E244518005AAE56 /* PBXContainerItemProxy */;
+			target = 42630D2B1E244840005AAE56 /* GDPerformanceVIew-iOS */;
+			targetProxy = 42630D311E244840005AAE56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,7 +423,7 @@
 			};
 			name = Release;
 		};
-		42630D1F1E244518005AAE56 /* Debug */ = {
+		42630D361E244840005AAE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -433,12 +433,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GDPerformanceViewIOS/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceVIew-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GD.GDPerformanceViewIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceVIew-iOS";
+				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -446,7 +446,7 @@
 			};
 			name = Debug;
 		};
-		42630D201E244518005AAE56 /* Release */ = {
+		42630D371E244840005AAE56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -456,12 +456,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GDPerformanceViewIOS/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceVIew-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GD.GDPerformanceViewIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceVIew-iOS";
+				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,11 +490,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42630D1E1E244518005AAE56 /* Build configuration list for PBXNativeTarget "GDPerformanceViewIOS" */ = {
+		42630D351E244840005AAE56 /* Build configuration list for PBXNativeTarget "GDPerformanceVIew-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42630D1F1E244518005AAE56 /* Debug */,
-				42630D201E244518005AAE56 /* Release */,
+				42630D361E244840005AAE56 /* Debug */,
+				42630D371E244840005AAE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

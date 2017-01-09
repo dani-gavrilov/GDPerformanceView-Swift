@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42630D141E244518005AAE56"
-               BuildableName = "GDPerformanceViewIOS.framework"
-               BlueprintName = "GDPerformanceViewIOS"
+               BlueprintIdentifier = "42630D2B1E244840005AAE56"
+               BuildableName = "GDPerformanceVIew-iOS.framework"
+               BlueprintName = "GDPerformanceVIew-iOS"
                ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42630D141E244518005AAE56"
-            BuildableName = "GDPerformanceViewIOS.framework"
-            BlueprintName = "GDPerformanceViewIOS"
+            BlueprintIdentifier = "42630D2B1E244840005AAE56"
+            BuildableName = "GDPerformanceVIew-iOS.framework"
+            BlueprintName = "GDPerformanceVIew-iOS"
             ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42630D141E244518005AAE56"
-            BuildableName = "GDPerformanceViewIOS.framework"
-            BlueprintName = "GDPerformanceViewIOS"
+            BlueprintIdentifier = "42630D2B1E244840005AAE56"
+            BuildableName = "GDPerformanceVIew-iOS.framework"
+            BlueprintName = "GDPerformanceVIew-iOS"
             ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
