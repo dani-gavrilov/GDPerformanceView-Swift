@@ -57,8 +57,8 @@ Call to change appearance.
 
 ```swift
 self.performanceView?.configure(configuration: { textLabel in
-	textLabel?.backgroundColor = UIColor.black
-	textLabel?.textColor = UIColor.white
+	textLabel?.backgroundColor = .black
+	textLabel?.textColor = .white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
 })
 ```
@@ -81,8 +81,8 @@ self.performanceView?.hideMonitoring()
 
 ```swift
 self.performanceView?.startMonitoring(configuration: { textLabel in
-	textLabel?.backgroundColor = UIColor.black
-	textLabel?.textColor = UIColor.white
+	textLabel?.backgroundColor = .black
+	textLabel?.textColor = .white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
 })
 ```
