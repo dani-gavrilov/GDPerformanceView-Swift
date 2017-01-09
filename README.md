@@ -10,7 +10,7 @@ Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS a
 Simply add GDPerformanceMonitoring folder with files to your project, or use CocoaPods.
 
 ### Podfile
-```
+```ruby
 platform :ios, '8.0'
 use_frameworks!
 
@@ -28,11 +28,11 @@ Also, you can configure appearance as you like or just hide the monitoring view 
 
 Call to start or resume monitoring and show monitoring view.
 
-```
+```swift
 GDPerformanceMonitor.sharedInstance.startMonitoring()
 ```
 
-```
+```swift
 self.performanceView = GDPerformanceMonitor.init()
 self.performanceView?.startMonitoring()
 ```
@@ -41,13 +41,13 @@ self.performanceView?.startMonitoring()
 
 Call when you're done with performance monitoring.
 
-```
+```swift
 self.performanceView?.stopMonitoring()
 ```
 
 Call to hide and pause monitoring.
 
-```
+```swift
 self.performanceView?.pauseMonitoring()
 ```
 
@@ -55,8 +55,8 @@ self.performanceView?.pauseMonitoring()
 
 Call to change appearance.
 
-```
-self.performanceView?.configure(configuration: { (textLabel) in
+```swift
+self.performanceView?.configure(configuration: { textLabel in
 	textLabel?.backgroundColor = UIColor.black
 	textLabel?.textColor = UIColor.white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
@@ -65,23 +65,22 @@ self.performanceView?.configure(configuration: { (textLabel) in
 
 Call to change output information.
 
-```
+```swift
 self.performanceView?.appVersionHidden = true
-```
-```
+
 self.performanceView?.deviceVersionHidden = true
 ```
 
 Call to hide monitoring view.
 
-```
+```swift
 self.performanceView?.hideMonitoring()
 ```
 
 ### Start monitoring and configure
 
-```
-self.performanceView?.startMonitoring(configuration: { (textLabel) in
+```swift
+self.performanceView?.startMonitoring(configuration: { textLabel in
 	textLabel?.backgroundColor = UIColor.black
 	textLabel?.textColor = UIColor.white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
@@ -92,11 +91,11 @@ self.performanceView?.startMonitoring(configuration: { (textLabel) in
 
 Set the delegate and implement its method.
 
-```
+```swift
 self.performanceView?.delegate = self
 ```
 
-```
+```swift
 func performanceMonitorDidReport(fpsValue: Float, cpuValue: Float) {
 	print(fpsValue, cpuValue)
 }
