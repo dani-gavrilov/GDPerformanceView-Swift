@@ -9,13 +9,18 @@ Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS a
 ## Installation
 Simply add GDPerformanceMonitoring folder with files to your project, or use CocoaPods.
 
+### Carthage
+```ruby
+github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.0.3
+```
+
 ### Podfile
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 1.0.2'
+	pod 'GDPerformanceView-Swift', '~> 1.0.3'
 end
 ```
 
