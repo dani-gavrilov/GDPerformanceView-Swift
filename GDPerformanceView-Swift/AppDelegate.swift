@@ -35,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     #if DEBUG
         GDPerformanceMonitor.sharedInstance.startMonitoring()
         GDPerformanceMonitor.sharedInstance.configure(configuration: { (textLabel) in
-            textLabel?.backgroundColor = UIColor.black
-            textLabel?.textColor = UIColor.white
+            textLabel?.backgroundColor = .black
+            textLabel?.textColor = .white
             textLabel?.layer.borderColor = UIColor.black.cgColor
         })
     #endif

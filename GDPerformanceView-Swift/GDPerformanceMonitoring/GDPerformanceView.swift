@@ -164,11 +164,11 @@ internal class GDPerformanceView: UIWindow {
     
     private func setupWindowAndDefaultVariables() {
         let rootViewController = UIViewController()
-        rootViewController.view.backgroundColor = UIColor.clear
+        rootViewController.view.backgroundColor = .clear
         
         self.rootViewController = rootViewController
         self.windowLevel = UIWindowLevelStatusBar + 1.0
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = .clear
         self.isHidden = true
     }
     
@@ -180,8 +180,8 @@ internal class GDPerformanceView: UIWindow {
     private func setupTextLayers() {
         self.monitoringTextLabel.textAlignment = NSTextAlignment.center
         self.monitoringTextLabel.numberOfLines = 2
-        self.monitoringTextLabel.backgroundColor = UIColor.black
-        self.monitoringTextLabel.textColor = UIColor.white
+        self.monitoringTextLabel.backgroundColor = .black
+        self.monitoringTextLabel.textColor = .white
         self.monitoringTextLabel.clipsToBounds = true
         self.monitoringTextLabel.font = UIFont.systemFont(ofSize: 8.0)
         self.monitoringTextLabel.layer.borderWidth = 1.0
