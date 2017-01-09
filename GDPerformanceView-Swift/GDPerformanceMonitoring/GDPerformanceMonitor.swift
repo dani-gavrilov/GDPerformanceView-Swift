@@ -71,7 +71,7 @@ public class GDPerformanceMonitor: NSObject {
     /**
      Creates and returns instance of GDPerformanceMonitor.
      */
-    override init() {
+    public override init() {
         super.init()
         
         self.subscribeToNotifications()
