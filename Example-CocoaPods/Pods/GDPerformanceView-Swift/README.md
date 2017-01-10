@@ -61,7 +61,7 @@ self.performanceView?.pauseMonitoring()
 Call to change appearance.
 
 ```swift
-self.performanceView?.configure(configuration: { (textLabel) in
+self.performanceView?.configure(configuration: { textLabel in
 	textLabel?.backgroundColor = .black
 	textLabel?.textColor = .white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
@@ -85,7 +85,7 @@ self.performanceView?.hideMonitoring()
 ### Start monitoring and configure
 
 ```swift
-self.performanceView?.startMonitoring(configuration: { (textLabel) in
+self.performanceView?.startMonitoring(configuration: { textLabel in
 	textLabel?.backgroundColor = .black
 	textLabel?.textColor = .white
 	textLabel?.layer.borderColor = UIColor.black.cgColor
