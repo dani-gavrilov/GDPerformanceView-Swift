@@ -31,22 +31,22 @@ internal class GDWindowViewController: UIViewController {
     }
     
     // MARK: Init Methods & Superclass Overriders
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .clear
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     // MARK: Public Methods
     
-    internal func setupWith(prefersStatusBarHidden: Bool, preferredStatusBarStyle: UIStatusBarStyle) {
+    internal func configureStatusBarAppearance(prefersStatusBarHidden: Bool, preferredStatusBarStyle: UIStatusBarStyle) {
         self.selectedStatusBarHidden = prefersStatusBarHidden
         self.selectedStatusBarStyle = preferredStatusBarStyle
     }
-
+    
 }

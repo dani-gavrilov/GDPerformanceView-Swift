@@ -1,12 +1,12 @@
 PODS:
-  - GDPerformanceView-Swift (1.0.7)
+  - GDPerformanceView-Swift (1.0.9)
 
 DEPENDENCIES:
-  - GDPerformanceView-Swift (~> 1.0.7)
+  - GDPerformanceView-Swift (~> 1.0.9)
 
 SPEC CHECKSUMS:
-  GDPerformanceView-Swift: 31bba14e25a34badf4d1e7b72ea33b07482f296c
+  GDPerformanceView-Swift: bc1b70feff3daf4c5b8d09fcc8a64d650a66c49a
 
-PODFILE CHECKSUM: 4a1d580bb19e65877f6e31f03cbfbab76ad58dd4
+PODFILE CHECKSUM: 9746a12f11592698e9fd99e4cdacc01e66e02595
 
 COCOAPODS: 1.2.0.beta.3

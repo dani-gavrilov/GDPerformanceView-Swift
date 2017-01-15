@@ -33,6 +33,15 @@ internal class GDPerformanceView: UIWindow {
     internal weak var performanceDelegate: GDPerformanceMonitorDelegate?
     
     /**
+     Override this properties to return the desired status bar attributes.
+     
+     Default prefersStatusBarHidden is false, preferredStatusBarStyle is UIStatusBarStyle.default.
+     */
+    internal var prefersStatusBarHidden: Bool = false
+    
+    internal var preferredStatusBarStyle: UIStatusBarStyle = UIStatusBarStyle.default
+    
+    /**
      Change it to hide or show application version from monitoring view. Default is false.
      */
     internal var appVersionHidden: Bool = false {
@@ -53,10 +62,13 @@ internal class GDPerformanceView: UIWindow {
     // MARK: Private Properties
     
     private var displayLink: CADisplayLink?
+    
     private var monitoringTextLabel: GDMarginLabel = GDMarginLabel()
     
     private var lastFPSUsageValue: CGFloat = 0.0
+    
     private var displayLinkLastTimestamp: CFTimeInterval = 0.0
+    
     private var lastUpdateTimestamp: CFTimeInterval = 0.0
     
     private var versionsString: String = ""
@@ -112,7 +124,7 @@ internal class GDPerformanceView: UIWindow {
     /**
      Returns weak monitoring text label.
      */
-    public func textLabel() -> UILabel? {
+    internal func textLabel() -> UILabel? {
         weak var weakTextLabel = self.monitoringTextLabel
         return weakTextLabel
     }
@@ -120,7 +132,7 @@ internal class GDPerformanceView: UIWindow {
     /**
      Pauses performance monitoring and hides monitoring view.
      */
-    public func pauseMonitoring() {
+    internal func pauseMonitoring() {
         self.displayLink?.isPaused = true
         
         self.monitoringTextLabel.removeFromSuperview()
@@ -129,7 +141,7 @@ internal class GDPerformanceView: UIWindow {
     /**
      Resumes performance monitoring and shows monitoring view.
      */
-    public func resumeMonitoring(shouldShowMonitoringView: Bool) {
+    internal func resumeMonitoring(shouldShowMonitoringView: Bool) {
         self.displayLink?.isPaused = false
         
         if shouldShowMonitoringView {
@@ -140,14 +152,14 @@ internal class GDPerformanceView: UIWindow {
     /**
      Hides monitoring view.
      */
-    public func hideMonitoring() {
+    internal func hideMonitoring() {
         self.monitoringTextLabel.removeFromSuperview()
     }
     
     /**
      Adds monitoring view above the status bar.
      */
-    public func addMonitoringViewAboveStatusBar() {
+    internal func addMonitoringViewAboveStatusBar() {
         if !self.isHidden {
             return
         }
@@ -156,9 +168,19 @@ internal class GDPerformanceView: UIWindow {
     }
     
     /**
+     Configures root view controller with prefersStatusBarHidden and preferredStatusBarStyle.
+     */
+    internal func configureRootViewController() {
+        let rootViewController = GDWindowViewController()
+        rootViewController.setupWith(prefersStatusBarHidden: self.prefersStatusBarHidden, preferredStatusBarStyle: self.preferredStatusBarStyle)
+        
+        self.rootViewController = rootViewController
+    }
+    
+    /**
      Stops and removes monitoring view. Call when you're done with performance monitoring.
      */
-    public func stopMonitoring() {
+    internal func stopMonitoring() {
         self.displayLink?.invalidate()
         self.displayLink = nil
     }
@@ -168,7 +190,6 @@ internal class GDPerformanceView: UIWindow {
     
     private func setupWindowAndDefaultVariables() {
         let rootViewController = GDWindowViewController()
-        rootViewController.view.backgroundColor = .clear
         
         self.rootViewController = rootViewController
         self.windowLevel = UIWindowLevelStatusBar + 1.0

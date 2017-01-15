@@ -24,7 +24,7 @@ import UIKit
 import QuartzCore
 
 internal class GDPerformanceView: UIWindow {
-
+    
     // MARK: Public Properties
     
     /**
@@ -163,7 +163,7 @@ internal class GDPerformanceView: UIWindow {
         if !self.isHidden {
             return
         }
-    
+        
         self.isHidden = false
     }
     
@@ -172,7 +172,7 @@ internal class GDPerformanceView: UIWindow {
      */
     internal func configureRootViewController() {
         let rootViewController = GDWindowViewController()
-        rootViewController.setupWith(prefersStatusBarHidden: self.prefersStatusBarHidden, preferredStatusBarStyle: self.preferredStatusBarStyle)
+        rootViewController.configureStatusBarAppearance(prefersStatusBarHidden: self.prefersStatusBarHidden, preferredStatusBarStyle: self.preferredStatusBarStyle)
         
         self.rootViewController = rootViewController
     }
@@ -213,10 +213,10 @@ internal class GDPerformanceView: UIWindow {
         self.monitoringTextLabel.layer.borderWidth = 1.0
         self.monitoringTextLabel.layer.borderColor = UIColor.black.cgColor
         self.monitoringTextLabel.layer.cornerRadius = 5.0
-       
+        
         self.addSubview(self.monitoringTextLabel)
     }
-
+    
     private func subscribeToNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(GDPerformanceView.applicationWillChangeStatusBarFrame(notification:)), name: NSNotification.Name.UIApplicationWillChangeStatusBarFrame, object: nil)
     }
@@ -284,7 +284,7 @@ internal class GDPerformanceView: UIWindow {
             if kern != KERN_SUCCESS {
                 return -1
             }
-        
+            
             threadBasicInfo = threadInfo as thread_basic_info
             
             if threadBasicInfo.flags & TH_FLAGS_IDLE == 0 {
