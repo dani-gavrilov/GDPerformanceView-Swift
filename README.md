@@ -11,7 +11,7 @@ Simply add GDPerformanceMonitoring folder with files to your project, or use Coc
 
 ### Carthage
 ```ruby
-github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.0.4
+github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.0.5
 ```
 
 ### Podfile
@@ -20,7 +20,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 1.0.4'
+	pod 'GDPerformanceView-Swift', '~> 1.0.5'
 end
 ```
 
