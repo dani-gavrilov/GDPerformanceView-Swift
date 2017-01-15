@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424EA8361E2BD7C9002E7D6A /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
+		424EA8371E2BD96D002E7D6A /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
 		428FE57F1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06E71E1D18C400A5C840 /* AppDelegate.swift */; };
 		42AD06F41E1D18C400A5C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E81E1D18C400A5C840 /* Assets.xcassets */; };
@@ -50,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDPerformanceView-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDWindowViewController.swift; sourceTree = "<group>"; };
 		428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDPerformanceMonitorDelegate.swift; sourceTree = "<group>"; };
 		42AD06E71E1D18C400A5C840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42AD06E81E1D18C400A5C840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */,
+				424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */,
 				42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */,
 				42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */,
 				428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */,
@@ -254,6 +258,7 @@
 				42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */,
 				42AD06F71E1D18C400A5C840 /* GDMarginLabel.swift in Sources */,
 				42AD06F91E1D18C400A5C840 /* GDPerformanceView.swift in Sources */,
+				424EA8361E2BD7C9002E7D6A /* GDWindowViewController.swift in Sources */,
 				428FE57F1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift in Sources */,
 				42AD06F81E1D18C400A5C840 /* GDPerformanceMonitor.swift in Sources */,
 			);
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424EA8371E2BD96D002E7D6A /* GDWindowViewController.swift in Sources */,
 				42C2CBF01E244D8000A96A93 /* GDMarginLabel.swift in Sources */,
 				42C2CBF11E244D8000A96A93 /* GDPerformanceMonitor.swift in Sources */,
 				42C2CBF21E244D8000A96A93 /* GDPerformanceView.swift in Sources */,

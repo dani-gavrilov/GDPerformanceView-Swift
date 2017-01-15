@@ -1,11 +1,11 @@
 PODS:
-  - GDPerformanceView-Swift (1.0.5)
+  - GDPerformanceView-Swift (1.0.6)
 
 DEPENDENCIES:
   - GDPerformanceView-Swift (~> 1.0.5)
 
 SPEC CHECKSUMS:
-  GDPerformanceView-Swift: 1a5677f7c43b6d650806c3fc8e68c94a4a4644fd
+  GDPerformanceView-Swift: 7298553c29783556e5d70a9481aee247f4e2a421
 
 PODFILE CHECKSUM: 310a5978e37e973baefdb0679a151d3b6e98a597
 

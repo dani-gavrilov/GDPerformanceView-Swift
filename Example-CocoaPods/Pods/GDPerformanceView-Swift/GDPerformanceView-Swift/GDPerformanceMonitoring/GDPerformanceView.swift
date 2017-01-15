@@ -167,7 +167,7 @@ internal class GDPerformanceView: UIWindow {
     // MARK: Default Setups
     
     private func setupWindowAndDefaultVariables() {
-        let rootViewController = UIViewController()
+        let rootViewController = GDWindowViewController()
         rootViewController.view.backgroundColor = .clear
         
         self.rootViewController = rootViewController
