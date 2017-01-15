@@ -104,6 +104,12 @@ Call to hide monitoring view.
 self.performanceView?.hideMonitoring()
 ```
 
+Call to change status bar appearance.
+
+```swift
+self.performanceView?.configureStatusBarAppearance(prefersStatusBarHidden: false, preferredStatusBarStyle: .lightContent)
+```
+
 #### Start monitoring and configure
 
 ```swift
