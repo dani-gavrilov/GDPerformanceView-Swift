@@ -289,7 +289,7 @@ internal class GDPerformanceView: UIWindow {
     }
     
     private func updateMonitoringLabel(fpsUsage: CGFloat, cpuUsage: CGFloat) {
-        let monitoringString = String(format: "FPS : %.1f; CPU : %.1f%%", fpsUsage, cpuUsage)
+        let monitoringString = String(format: "FPSSSSS : %.1f; CPU : %.1f%%", fpsUsage, cpuUsage)
         
         self.monitoringTextLabel.text = monitoringString + self.versionsString
         self.layoutTextLabel()

@@ -1,1 +1,1 @@
-github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.0.6
+github "dani-gavrilov/GDPerformanceView-Swift" "carthage"

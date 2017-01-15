@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8B64CC1A58E1BE4605B24308471B492B"
+               BlueprintIdentifier = "EFAE7C86FD6E80EBB3F47DB74FC97A6A"
                BuildableName = "GDPerformanceView_Swift.framework"
                BlueprintName = "GDPerformanceView-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8B64CC1A58E1BE4605B24308471B492B"
+            BlueprintIdentifier = "EFAE7C86FD6E80EBB3F47DB74FC97A6A"
             BuildableName = "GDPerformanceView_Swift.framework"
             BlueprintName = "GDPerformanceView-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">

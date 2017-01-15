@@ -31,7 +31,7 @@ public class GDPerformanceMonitor: NSObject {
      */
     public weak var delegate: GDPerformanceMonitorDelegate? {
         didSet {
-            self.performanceView?.delegate = self.delegate
+            self.performanceView?.performanceDelegate = self.delegate
         }
     }
     
@@ -177,9 +177,8 @@ public class GDPerformanceMonitor: NSObject {
     }
     
     private func setupPerformanceView() {
-        let statusBarFrame = UIApplication.shared.statusBarFrame
-        self.performanceView = GDPerformanceView.init(frame: statusBarFrame)
-        self.performanceView?.delegate = self.delegate
+        self.performanceView = GDPerformanceView.init()
+        self.performanceView?.performanceDelegate = self.delegate
         
         if (self.performanceViewPaused) {
             self.performanceView?.pauseMonitoring()

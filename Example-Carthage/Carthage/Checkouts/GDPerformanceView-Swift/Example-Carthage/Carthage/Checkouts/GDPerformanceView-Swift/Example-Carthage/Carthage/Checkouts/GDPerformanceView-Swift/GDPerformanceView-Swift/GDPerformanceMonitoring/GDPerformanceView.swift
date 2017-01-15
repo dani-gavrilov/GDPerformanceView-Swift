@@ -30,12 +30,12 @@ internal class GDPerformanceView: UIWindow {
     /**
      GDPerformanceMonitorDelegate delegate.
      */
-    public weak var delegate: GDPerformanceMonitorDelegate?
+    internal weak var performanceDelegate: GDPerformanceMonitorDelegate?
     
     /**
      Change it to hide or show application version from monitoring view. Default is false.
      */
-    public var appVersionHidden: Bool = false {
+    internal var appVersionHidden: Bool = false {
         didSet {
             self.configureVersionsString()
         }
@@ -44,7 +44,7 @@ internal class GDPerformanceView: UIWindow {
     /**
      Change it to hide or show device iOS version from monitoring view. Default is false.
      */
-    public var deviceVersionHidden: Bool = false {
+    internal var deviceVersionHidden: Bool = false {
         didSet {
             self.configureVersionsString()
         }
@@ -63,8 +63,8 @@ internal class GDPerformanceView: UIWindow {
     
     // MARK: Init Methods & Superclass Overriders
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    internal init() {
+        super.init(frame: GDPerformanceView.windowFrame())
         
         self.setupWindowAndDefaultVariables()
         self.setupDisplayLink()
@@ -75,6 +75,12 @@ internal class GDPerformanceView: UIWindow {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.layoutWindow()
     }
     
     override func becomeKey() {
@@ -97,9 +103,7 @@ internal class GDPerformanceView: UIWindow {
     
     @objc private func applicationWillChangeStatusBarFrame(notification: NSNotification) {
         DispatchQueue.main.async {
-            let statusBarFrame = UIApplication.shared.statusBarFrame
-            self.frame = CGRect(x: 0.0, y: 0.0, width: statusBarFrame.width, height: statusBarFrame.height)
-            self.layoutTextLabel()
+            self.layoutWindow()
         }
     }
     
@@ -169,6 +173,7 @@ internal class GDPerformanceView: UIWindow {
         self.rootViewController = rootViewController
         self.windowLevel = UIWindowLevelStatusBar + 1.0
         self.backgroundColor = .clear
+        self.clipsToBounds = true
         self.isHidden = true
     }
     
@@ -271,8 +276,16 @@ internal class GDPerformanceView: UIWindow {
     
     // MARK: Other Methods
     
+    class func windowFrame() -> CGRect {
+        var frame = CGRect.zero
+        if let window = UIApplication.shared.delegate?.window {
+            frame = CGRect(x: 0.0, y: 0.0, width: window!.bounds.width, height: 20.0)
+        }
+        return frame
+    }
+    
     private func report(fpsUsage: CGFloat, cpuUsage: CGFloat) {
-        self.delegate?.performanceMonitorDidReport(fpsValue: Float(fpsUsage), cpuValue: Float(cpuUsage))
+        self.performanceDelegate?.performanceMonitorDidReport(fpsValue: Float(fpsUsage), cpuValue: Float(cpuUsage))
     }
     
     private func updateMonitoringLabel(fpsUsage: CGFloat, cpuUsage: CGFloat) {
@@ -288,6 +301,11 @@ internal class GDPerformanceView: UIWindow {
         let labelSize = self.monitoringTextLabel.sizeThatFits(CGSize(width: windowWidth, height: windowHeight))
         
         self.monitoringTextLabel.frame = CGRect(x: (windowWidth - labelSize.width) / 2.0, y: (windowHeight - labelSize.height) / 2.0, width: labelSize.width, height: labelSize.height)
+    }
+    
+    private func layoutWindow() {
+        self.frame = GDPerformanceView.windowFrame()
+        self.layoutTextLabel()
     }
     
     private func configureVersionsString() {

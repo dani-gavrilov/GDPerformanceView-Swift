@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		424EA8361E2BD7C9002E7D6A /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
-		424EA8371E2BD96D002E7D6A /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
 		428FE57F1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
+		429FB5861E2BDEEA0080BD5A /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
+		429FB5871E2BDEEA0080BD5A /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
+		429FB5881E2BDEEA0080BD5A /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
+		429FB5891E2BDEEA0080BD5A /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
+		429FB58A1E2BDEEA0080BD5A /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06E71E1D18C400A5C840 /* AppDelegate.swift */; };
 		42AD06F41E1D18C400A5C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E81E1D18C400A5C840 /* Assets.xcassets */; };
 		42AD06F51E1D18C400A5C840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E91E1D18C400A5C840 /* LaunchScreen.storyboard */; };
@@ -20,10 +24,6 @@
 		42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C2CBEB1E244D6300A96A93 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; };
 		42C2CBEC1E244D6300A96A93 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42C2CBF01E244D8000A96A93 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
-		42C2CBF11E244D8000A96A93 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
-		42C2CBF21E244D8000A96A93 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42C2CBF31E244D8000A96A93 /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,11 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424EA8371E2BD96D002E7D6A /* GDWindowViewController.swift in Sources */,
-				42C2CBF01E244D8000A96A93 /* GDMarginLabel.swift in Sources */,
-				42C2CBF11E244D8000A96A93 /* GDPerformanceMonitor.swift in Sources */,
-				42C2CBF21E244D8000A96A93 /* GDPerformanceView.swift in Sources */,
-				42C2CBF31E244D8000A96A93 /* GDPerformanceMonitorDelegate.swift in Sources */,
+				429FB5861E2BDEEA0080BD5A /* GDMarginLabel.swift in Sources */,
+				429FB5871E2BDEEA0080BD5A /* GDWindowViewController.swift in Sources */,
+				429FB5881E2BDEEA0080BD5A /* GDPerformanceMonitor.swift in Sources */,
+				429FB5891E2BDEEA0080BD5A /* GDPerformanceView.swift in Sources */,
+				429FB58A1E2BDEEA0080BD5A /* GDPerformanceMonitorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
