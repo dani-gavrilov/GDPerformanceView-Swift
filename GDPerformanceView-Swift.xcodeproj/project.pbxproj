@@ -16,11 +16,11 @@
 		42AD06F71E1D18C400A5C840 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
 		42AD06F81E1D18C400A5C840 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
 		42AD06F91E1D18C400A5C840 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42B9EA9C1E2C340500F3DC1B /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
-		42B9EA9D1E2C340500F3DC1B /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42B9EA9E1E2C340500F3DC1B /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
-		42B9EA9F1E2C340500F3DC1B /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
-		42B9EAA01E2C340500F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
+		42B9EAA11E2C356200F3DC1B /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
+		42B9EAA21E2C356200F3DC1B /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
+		42B9EAA31E2C356200F3DC1B /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
+		42B9EAA41E2C356200F3DC1B /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
+		42B9EAA51E2C356200F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C2CBEB1E244D6300A96A93 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; };
 		42C2CBEC1E244D6300A96A93 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -268,11 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B9EA9C1E2C340500F3DC1B /* GDPerformanceMonitor.swift in Sources */,
-				42B9EA9D1E2C340500F3DC1B /* GDPerformanceView.swift in Sources */,
-				42B9EA9E1E2C340500F3DC1B /* GDMarginLabel.swift in Sources */,
-				42B9EA9F1E2C340500F3DC1B /* GDWindowViewController.swift in Sources */,
-				42B9EAA01E2C340500F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */,
+				42B9EAA11E2C356200F3DC1B /* GDPerformanceMonitor.swift in Sources */,
+				42B9EAA21E2C356200F3DC1B /* GDPerformanceView.swift in Sources */,
+				42B9EAA31E2C356200F3DC1B /* GDMarginLabel.swift in Sources */,
+				42B9EAA41E2C356200F3DC1B /* GDWindowViewController.swift in Sources */,
+				42B9EAA51E2C356200F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
