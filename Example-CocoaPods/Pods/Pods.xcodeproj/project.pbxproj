@@ -109,10 +109,10 @@
 		59B740FD1636BFF550E740E1AE8AB352 /* GDPerformanceView-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				395C0CEF66507283B54E4BC73553F0B5 /* GDMarginLabel.swift */,
 				A36A3982F4F55358ED6ED454313A9DB0 /* GDPerformanceMonitor.swift */,
 				29242AB6DA9F718785E5FC280EF302BA /* GDPerformanceMonitorDelegate.swift */,
 				22DA40CB52ECA5767450BE9FDDBC4B99 /* GDPerformanceView.swift */,
+				395C0CEF66507283B54E4BC73553F0B5 /* GDMarginLabel.swift */,
 				B62D96828FB981283ED55AC00BB0DE44 /* GDWindowViewController.swift */,
 				09EBE28FB94A83233589B858FA065405 /* Support Files */,
 			);
