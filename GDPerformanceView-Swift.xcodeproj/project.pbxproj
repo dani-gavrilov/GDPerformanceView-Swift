@@ -497,6 +497,7 @@
 				42C2CBEF1E244D6300A96A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
