@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42908E0E1E258E2E002F71AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42908E0D1E258E2E002F71AE /* AppDelegate.swift */; };
+		42908E101E258E2E002F71AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42908E0F1E258E2E002F71AE /* ViewController.swift */; };
+		42908E131E258E2E002F71AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42908E111E258E2E002F71AE /* Main.storyboard */; };
+		42908E151E258E2E002F71AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42908E141E258E2E002F71AE /* Assets.xcassets */; };
+		42908E181E258E2E002F71AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42908E161E258E2E002F71AE /* LaunchScreen.storyboard */; };
+		42908E211E258EF5002F71AE /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42908E201E258EF5002F71AE /* GDPerformanceView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42908E0A1E258E2E002F71AE /* Example-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42908E0D1E258E2E002F71AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42908E0F1E258E2E002F71AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42908E121E258E2E002F71AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42908E141E258E2E002F71AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42908E171E258E2E002F71AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42908E191E258E2E002F71AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42908E201E258EF5002F71AE /* GDPerformanceView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDPerformanceView.framework; path = Carthage/Build/iOS/GDPerformanceView.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42908E071E258E2E002F71AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42908E211E258EF5002F71AE /* GDPerformanceView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42908E011E258E2E002F71AE = {
+			isa = PBXGroup;
+			children = (
+				42908E0C1E258E2E002F71AE /* Example-Carthage */,
+				42908E0B1E258E2E002F71AE /* Products */,
+				42908E1F1E258EF5002F71AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42908E0B1E258E2E002F71AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42908E0A1E258E2E002F71AE /* Example-Carthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42908E0C1E258E2E002F71AE /* Example-Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				42908E0D1E258E2E002F71AE /* AppDelegate.swift */,
+				42908E0F1E258E2E002F71AE /* ViewController.swift */,
+				42908E111E258E2E002F71AE /* Main.storyboard */,
+				42908E141E258E2E002F71AE /* Assets.xcassets */,
+				42908E161E258E2E002F71AE /* LaunchScreen.storyboard */,
+				42908E191E258E2E002F71AE /* Info.plist */,
+			);
+			path = "Example-Carthage";
+			sourceTree = "<group>";
+		};
+		42908E1F1E258EF5002F71AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42908E201E258EF5002F71AE /* GDPerformanceView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42908E091E258E2E002F71AE /* Example-Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42908E1C1E258E2E002F71AE /* Build configuration list for PBXNativeTarget "Example-Carthage" */;
+			buildPhases = (
+				42908E061E258E2E002F71AE /* Sources */,
+				42908E071E258E2E002F71AE /* Frameworks */,
+				42908E081E258E2E002F71AE /* Resources */,
+				42908E221E258F11002F71AE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-Carthage";
+			productName = "Example-Carthage";
+			productReference = 42908E0A1E258E2E002F71AE /* Example-Carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42908E021E258E2E002F71AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Daniil Gavrilov";
+				TargetAttributes = {
+					42908E091E258E2E002F71AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RU64C364MT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 42908E051E258E2E002F71AE /* Build configuration list for PBXProject "Example-Carthage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42908E011E258E2E002F71AE;
+			productRefGroup = 42908E0B1E258E2E002F71AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42908E091E258E2E002F71AE /* Example-Carthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42908E081E258E2E002F71AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42908E181E258E2E002F71AE /* LaunchScreen.storyboard in Resources */,
+				42908E151E258E2E002F71AE /* Assets.xcassets in Resources */,
+				42908E131E258E2E002F71AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42908E221E258F11002F71AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/GDPerformanceView.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42908E061E258E2E002F71AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42908E101E258E2E002F71AE /* ViewController.swift in Sources */,
+				42908E0E1E258E2E002F71AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42908E111E258E2E002F71AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42908E121E258E2E002F71AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42908E161E258E2E002F71AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42908E171E258E2E002F71AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42908E1A1E258E2E002F71AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42908E1B1E258E2E002F71AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42908E1D1E258E2E002F71AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU64C364MT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Example-Carthage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GD.Example-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42908E1E1E258E2E002F71AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RU64C364MT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Example-Carthage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GD.Example-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42908E051E258E2E002F71AE /* Build configuration list for PBXProject "Example-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42908E1A1E258E2E002F71AE /* Debug */,
+				42908E1B1E258E2E002F71AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42908E1C1E258E2E002F71AE /* Build configuration list for PBXNativeTarget "Example-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42908E1D1E258E2E002F71AE /* Debug */,
+				42908E1E1E258E2E002F71AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42908E021E258E2E002F71AE /* Project object */;
+}
