@@ -81,8 +81,8 @@ class ViewController: UITableViewController, GDPerformanceMonitorDelegate {
     
     // MARK: GDPerformanceMonitorDelegate
     
-    func performanceMonitorDidReport(fpsValue: Float, cpuValue: Float) {
-        let reportString = String(format: "FPS : %.1f; CPU : %.1f%%", fpsValue, cpuValue)
+    func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float) {
+        let reportString = String(format: "FPS : %d; CPU : %.1f%%", fpsValue, cpuValue)
         
         self.tableView.beginUpdates()
         

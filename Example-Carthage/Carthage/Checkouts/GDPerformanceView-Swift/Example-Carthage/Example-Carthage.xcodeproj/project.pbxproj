@@ -12,7 +12,7 @@
 		42908E131E258E2E002F71AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42908E111E258E2E002F71AE /* Main.storyboard */; };
 		42908E151E258E2E002F71AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42908E141E258E2E002F71AE /* Assets.xcassets */; };
 		42908E181E258E2E002F71AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42908E161E258E2E002F71AE /* LaunchScreen.storyboard */; };
-		42908E211E258EF5002F71AE /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42908E201E258EF5002F71AE /* GDPerformanceView.framework */; };
+		42B9EAA71E2C37D400F3DC1B /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B9EAA61E2C37D400F3DC1B /* GDPerformanceView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		42908E141E258E2E002F71AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42908E171E258E2E002F71AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42908E191E258E2E002F71AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42908E201E258EF5002F71AE /* GDPerformanceView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDPerformanceView.framework; path = Carthage/Build/iOS/GDPerformanceView.framework; sourceTree = "<group>"; };
+		42B9EAA61E2C37D400F3DC1B /* GDPerformanceView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDPerformanceView.framework; path = Carthage/Build/iOS/GDPerformanceView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42908E211E258EF5002F71AE /* GDPerformanceView.framework in Frameworks */,
+				42B9EAA71E2C37D400F3DC1B /* GDPerformanceView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,7 @@
 		42908E1F1E258EF5002F71AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42908E201E258EF5002F71AE /* GDPerformanceView.framework */,
+				42B9EAA61E2C37D400F3DC1B /* GDPerformanceView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

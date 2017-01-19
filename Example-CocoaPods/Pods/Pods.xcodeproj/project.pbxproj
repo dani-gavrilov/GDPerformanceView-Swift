@@ -41,21 +41,21 @@
 		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5F7CA273F5474560AC6419848688D05F /* Pods-Example-CocoaPods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-CocoaPods-dummy.m"; sourceTree = "<group>"; };
 		641443F069C7D366F422CB44E2A12FC1 /* GDPerformanceView-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDPerformanceView-Swift-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		983139AEFC65CD509F51EFF96224415B /* Pods-Example-CocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Example-CocoaPods.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		983139AEFC65CD509F51EFF96224415B /* Pods-Example-CocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example-CocoaPods.modulemap"; sourceTree = "<group>"; };
 		9DC2787DDC80F512E8E60C13B3FFD14B /* Pods-Example-CocoaPods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-CocoaPods-umbrella.h"; sourceTree = "<group>"; };
 		9F20CCA11AF35D15B1B0934EF4B3C522 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A36A3982F4F55358ED6ED454313A9DB0 /* GDPerformanceMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GDPerformanceMonitor.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/GDPerformanceMonitor.swift"; sourceTree = "<group>"; };
 		A631FA37CCC88575AAA3F21A30C30AC8 /* Pods-Example-CocoaPods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-CocoaPods-resources.sh"; sourceTree = "<group>"; };
 		B62D96828FB981283ED55AC00BB0DE44 /* GDWindowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GDWindowViewController.swift; path = "GDPerformanceView-Swift/GDPerformanceMonitoring/GDWindowViewController.swift"; sourceTree = "<group>"; };
 		B82B547C2E6896770C16C0A96461DED3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAD801836708F53C1B5AFD378A1A2846 /* GDPerformanceView-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "GDPerformanceView-Swift.modulemap"; sourceTree = "<group>"; };
+		BAD801836708F53C1B5AFD378A1A2846 /* GDPerformanceView-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "GDPerformanceView-Swift.modulemap"; sourceTree = "<group>"; };
 		BC944395362E991D543BE1ECAC38EBA8 /* Pods-Example-CocoaPods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-CocoaPods-frameworks.sh"; sourceTree = "<group>"; };
 		D2EFECA70E98541282968129F72D6E26 /* GDPerformanceView-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-Swift-prefix.pch"; sourceTree = "<group>"; };
-		D7F71D1352B5D28B9DAF8FE4582AC290 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F71D1352B5D28B9DAF8FE4582AC290 /* GDPerformanceView_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GDPerformanceView_Swift.framework; path = "GDPerformanceView-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E0454AEE1B0B777B0BF8A010799E1AFA /* GDPerformanceView-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-Swift-umbrella.h"; sourceTree = "<group>"; };
-		E385258A969865C547667581A480FEB8 /* Pods_Example_CocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_CocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E385258A969865C547667581A480FEB8 /* Pods_Example_CocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example_CocoaPods.framework; path = "Pods-Example-CocoaPods.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EDBAC268DE31F353137C41AC8F7D854F /* Pods-Example-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
 		F13038F31E5D414ED3D23CF838956130 /* Pods-Example-CocoaPods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-CocoaPods-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 				B62D96828FB981283ED55AC00BB0DE44 /* GDWindowViewController.swift */,
 				09EBE28FB94A83233589B858FA065405 /* Support Files */,
 			);
+			name = "GDPerformanceView-Swift";
 			path = "GDPerformanceView-Swift";
 			sourceTree = "<group>";
 		};
@@ -340,7 +341,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -380,7 +380,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;

@@ -16,14 +16,14 @@
 		42AD06F71E1D18C400A5C840 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
 		42AD06F81E1D18C400A5C840 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
 		42AD06F91E1D18C400A5C840 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42B9EAA11E2C356200F3DC1B /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
-		42B9EAA21E2C356200F3DC1B /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
-		42B9EAA31E2C356200F3DC1B /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
-		42B9EAA41E2C356200F3DC1B /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
-		42B9EAA51E2C356200F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 		42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C2CBEB1E244D6300A96A93 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; };
 		42C2CBEC1E244D6300A96A93 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5D699591E30FF3600D99B25 /* GDPerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* GDPerformanceMonitor.swift */; };
+		A5D6995A1E30FF3600D99B25 /* GDPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* GDPerformanceView.swift */; };
+		A5D6995B1E30FF3600D99B25 /* GDMarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* GDMarginLabel.swift */; };
+		A5D6995C1E30FF3600D99B25 /* GDWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* GDWindowViewController.swift */; };
+		A5D6995D1E30FF3600D99B25 /* GDPerformanceMonitorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* GDPerformanceMonitorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +201,7 @@
 				TargetAttributes = {
 					4237B6D71E0FE2290059FF8B = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RU64C364MT;
 						ProvisioningStyle = Automatic;
 					};
 					42C2CBE31E244D6300A96A93 = {
@@ -267,11 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B9EAA11E2C356200F3DC1B /* GDPerformanceMonitor.swift in Sources */,
-				42B9EAA21E2C356200F3DC1B /* GDPerformanceView.swift in Sources */,
-				42B9EAA31E2C356200F3DC1B /* GDMarginLabel.swift in Sources */,
-				42B9EAA41E2C356200F3DC1B /* GDWindowViewController.swift in Sources */,
-				42B9EAA51E2C356200F3DC1B /* GDPerformanceMonitorDelegate.swift in Sources */,
+				A5D699591E30FF3600D99B25 /* GDPerformanceMonitor.swift in Sources */,
+				A5D6995A1E30FF3600D99B25 /* GDPerformanceView.swift in Sources */,
+				A5D6995B1E30FF3600D99B25 /* GDMarginLabel.swift in Sources */,
+				A5D6995C1E30FF3600D99B25 /* GDWindowViewController.swift in Sources */,
+				A5D6995D1E30FF3600D99B25 /* GDPerformanceMonitorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +404,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RU64C364MT;
 				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,7 +419,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RU64C364MT;
 				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

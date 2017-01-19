@@ -57,9 +57,9 @@ public class GDPerformanceMonitor: NSObject {
      Instance of GDPerformanceMonitor as singleton.
      */
     public static let sharedInstance: GDPerformanceMonitor = GDPerformanceMonitor.init()
-        
+    
     // MARK: Private Properties
-        
+    
     private var performanceView: GDPerformanceView?
     
     private var performanceViewPaused: Bool = false

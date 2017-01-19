@@ -21,5 +21,5 @@
 //
 
 public protocol GDPerformanceMonitorDelegate: class {
-    func performanceMonitorDidReport(fpsValue: Float, cpuValue: Float)
+    func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float)
 }

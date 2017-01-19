@@ -65,11 +65,11 @@ internal class GDPerformanceView: UIWindow {
     
     private var monitoringTextLabel: GDMarginLabel = GDMarginLabel()
     
-    private var lastFPSUsageValue: CGFloat = 0.0
+    private var screenUpdatesCount: Int = 0
     
-    private var displayLinkLastTimestamp: CFTimeInterval = 0.0
+    private var screenUpdatesBeginTime: CFTimeInterval = 0.0
     
-    private var lastUpdateTimestamp: CFTimeInterval = 0.0
+    private var averageScreenUpdatesTime: CFTimeInterval = 0.017
     
     private var versionsString: String = ""
     
@@ -224,27 +224,38 @@ internal class GDPerformanceView: UIWindow {
     // MARK: Monitoring
     
     @objc private func displayLinkAction(displayLink: CADisplayLink) {
-        var fps: CGFloat = round(CGFloat(1.0) / CGFloat((displayLink.timestamp - self.displayLinkLastTimestamp)))
-        if self.lastFPSUsageValue != 0.0 {
-            fps = (self.lastFPSUsageValue + fps) / 2.0
-        }
-        
-        self.lastFPSUsageValue = fps
-        self.displayLinkLastTimestamp = displayLink.timestamp
-        
-        let timestampSinceLastUpdate = self.displayLinkLastTimestamp - self.lastUpdateTimestamp
-        if timestampSinceLastUpdate >= 1.0 {
-            self.lastFPSUsageValue = 0.0
-            self.lastUpdateTimestamp = self.displayLinkLastTimestamp
+        if self.screenUpdatesBeginTime == 0.0 {
+            self.screenUpdatesBeginTime = displayLink.timestamp
+        } else {
+            self.screenUpdatesCount += 1
             
-            let cpu = self.cpuUsage()
+            let screenUpdatesTime = displayLink.timestamp - self.screenUpdatesBeginTime
             
-            self.report(fpsUsage: fps, cpuUsage: cpu)
-            self.updateMonitoringLabel(fpsUsage: fps, cpuUsage: cpu)
+            print("\(displayLink.duration)  \(self.averageScreenUpdatesTime)")
+            
+            if screenUpdatesTime >= 1.0 {
+                let updatesOverSecond = screenUpdatesTime - 1.0
+                let framesOverSecond = Int(updatesOverSecond / self.averageScreenUpdatesTime)
+                
+                self.screenUpdatesCount -= framesOverSecond;
+                
+                self.takeReadings()
+            }
         }
     }
     
-    private func cpuUsage() -> CGFloat {
+    private func takeReadings() {
+        let fps = self.screenUpdatesCount
+        let cpu = self.cpuUsage()
+        
+        self.screenUpdatesCount = 0
+        self.screenUpdatesBeginTime = 0.0
+        
+        self.report(fpsUsage: fps, cpuUsage: cpu)
+        self.updateMonitoringLabel(fpsUsage: fps, cpuUsage: cpu)
+    }
+    
+    private func cpuUsage() -> Float {
         let basicInfoCount = MemoryLayout<mach_task_basic_info_data_t>.size / MemoryLayout<natural_t>.size
         
         var kern: kern_return_t
@@ -271,7 +282,7 @@ internal class GDPerformanceView: UIWindow {
             threadStatistic += threadCount
         }
         
-        var totalUsageOfCPU: CGFloat = 0
+        var totalUsageOfCPU: Float = 0.0
         
         for i in 0..<threadCount {
             threadInfoCount = mach_msg_type_number_t(THREAD_INFO_MAX)
@@ -288,7 +299,7 @@ internal class GDPerformanceView: UIWindow {
             threadBasicInfo = threadInfo as thread_basic_info
             
             if threadBasicInfo.flags & TH_FLAGS_IDLE == 0 {
-                totalUsageOfCPU = totalUsageOfCPU + CGFloat(threadBasicInfo.cpu_usage) / CGFloat(TH_USAGE_SCALE) * 100.0
+                totalUsageOfCPU = totalUsageOfCPU + Float(threadBasicInfo.cpu_usage) / Float(TH_USAGE_SCALE) * 100.0
             }
         }
         
@@ -305,12 +316,12 @@ internal class GDPerformanceView: UIWindow {
         return frame
     }
     
-    private func report(fpsUsage: CGFloat, cpuUsage: CGFloat) {
-        self.performanceDelegate?.performanceMonitorDidReport(fpsValue: Float(fpsUsage), cpuValue: Float(cpuUsage))
+    private func report(fpsUsage: Int, cpuUsage: Float) {
+        self.performanceDelegate?.performanceMonitorDidReport(fpsValue: fpsUsage, cpuValue: cpuUsage)
     }
     
-    private func updateMonitoringLabel(fpsUsage: CGFloat, cpuUsage: CGFloat) {
-        let monitoringString = String(format: "FPS : %.1f; CPU : %.1f%%", fpsUsage, cpuUsage)
+    private func updateMonitoringLabel(fpsUsage: Int, cpuUsage: Float) {
+        let monitoringString = String(format: "FPS : %d; CPU : %.1f%%", fpsUsage, cpuUsage)
         
         self.monitoringTextLabel.text = monitoringString + self.versionsString
         self.layoutTextLabel()
