@@ -231,8 +231,6 @@ internal class GDPerformanceView: UIWindow {
             
             let screenUpdatesTime = displayLink.timestamp - self.screenUpdatesBeginTime
             
-            print("\(displayLink.duration)  \(self.averageScreenUpdatesTime)")
-            
             if screenUpdatesTime >= 1.0 {
                 let updatesOverSecond = screenUpdatesTime - 1.0
                 let framesOverSecond = Int(updatesOverSecond / self.averageScreenUpdatesTime)
