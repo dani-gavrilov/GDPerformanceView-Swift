@@ -2,7 +2,7 @@
 Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS and CPU usage via delegate.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
-[![Pod Version](https://img.shields.io/badge/Pod-1.2.0-6193DF.svg)](https://cocoapods.org/)
+[![Pod Version](https://img.shields.io/badge/Pod-1.1.2-6193DF.svg)](https://cocoapods.org/)
 ![Swift Version](https://img.shields.io/badge/xCode-8.2+-blue.svg) 
 ![Swift Version](https://img.shields.io/badge/iOS-8.0+-blue.svg) 
 ![Swift Version](https://img.shields.io/badge/Swift-3.0+-orange.svg)
