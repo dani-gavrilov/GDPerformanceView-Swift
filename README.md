@@ -140,5 +140,9 @@ func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float) {
 - iOS 8.0+
 - xCode 8.2+
 
-## License
+
+## Meta
+
+Daniil Gavrilov - [VK](https://vk.com/dani_gavrilov) - [FB](https://www.facebook.com/danigavrilov)
+
 GDPerformanceView is available under the MIT license. See the LICENSE file for more info.
