@@ -21,7 +21,7 @@ Simply add GDPerformanceMonitoring folder with files to your project, or use Coc
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/GDPerformanceView.framework` to an iOS project.
 
 ```ruby
-github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.1.1
+github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.1.2
 ```
 Don't forget to import GDPerformanceView by adding: 
 
@@ -37,7 +37,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 1.1.1'
+	pod 'GDPerformanceView-Swift', '~> 1.1.2'
 end
 ```
 Don't forget to import GDPerformanceView by adding: 
@@ -50,6 +50,8 @@ import GDPerformanceView_Swift
 
 Simply start monitoring. Performance view will be added above the status bar automatically.
 Also, you can configure appearance as you like or just hide the monitoring view and use its delegate.
+
+You can find example projects [here](https://github.com/dani-gavrilov/GDPerformanceViewExamples)
 
 #### Start monitoring
 
