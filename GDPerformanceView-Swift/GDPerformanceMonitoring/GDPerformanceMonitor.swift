@@ -1,5 +1,5 @@
 //
-// Copyright © 2016 Gavrilov Daniil
+// Copyright © 2017 Gavrilov Daniil
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -66,6 +66,8 @@ public class GDPerformanceMonitor: NSObject {
     
     private var performanceViewHidden: Bool = false
     
+    private var performanceViewStopped: Bool = false
+    
     private var prefersStatusBarHidden: Bool = false
     
     private var preferredStatusBarStyle: UIStatusBarStyle = UIStatusBarStyle.default
@@ -119,6 +121,7 @@ public class GDPerformanceMonitor: NSObject {
     public func startMonitoring(configuration: (UILabel?) -> Void) {
         self.performanceViewPaused = false
         self.performanceViewHidden = false
+        self.performanceViewStopped = false
         
         self.startOrResumeMonitoring()
         
@@ -132,6 +135,7 @@ public class GDPerformanceMonitor: NSObject {
     public func startMonitoring() {
         self.performanceViewPaused = false
         self.performanceViewHidden = false
+        self.performanceViewStopped = false
         
         self.startOrResumeMonitoring()
     }
@@ -158,6 +162,8 @@ public class GDPerformanceMonitor: NSObject {
      Stops and removes monitoring view. Call when you're done with performance monitoring.
      */
     public func stopMonitoring() {
+        self.performanceViewStopped = true
+        
         self.performanceView?.stopMonitoring()
         self.performanceView = nil
     }
@@ -193,14 +199,20 @@ public class GDPerformanceMonitor: NSObject {
     }
     
     private func setupPerformanceView() {
+        if self.performanceViewStopped {
+            return
+        }
+        
         self.performanceView = GDPerformanceView.init()
+        self.performanceView?.appVersionHidden = self.appVersionHidden
+        self.performanceView?.deviceVersionHidden = self.deviceVersionHidden
         self.performanceView?.performanceDelegate = self.delegate
         self.checkAndApplyStatusBarAppearance(prefersStatusBarHidden: self.prefersStatusBarHidden, preferredStatusBarStyle: self.preferredStatusBarStyle)
         
-        if (self.performanceViewPaused) {
+        if self.performanceViewPaused {
             self.performanceView?.pauseMonitoring()
         }
-        if (self.performanceViewHidden) {
+        if self.performanceViewHidden {
             self.performanceView?.hideMonitoring()
         }
     }
@@ -208,7 +220,7 @@ public class GDPerformanceMonitor: NSObject {
     // MARK: Other Methods
     
     private func checkAndApplyStatusBarAppearance(prefersStatusBarHidden: Bool, preferredStatusBarStyle: UIStatusBarStyle) {
-        if (self.performanceView?.prefersStatusBarHidden != prefersStatusBarHidden || self.performanceView?.preferredStatusBarStyle != preferredStatusBarStyle) {
+        if self.performanceView?.prefersStatusBarHidden != prefersStatusBarHidden || self.performanceView?.preferredStatusBarStyle != preferredStatusBarStyle {
             self.performanceView?.prefersStatusBarHidden = prefersStatusBarHidden
             self.performanceView?.preferredStatusBarStyle = preferredStatusBarStyle
             
