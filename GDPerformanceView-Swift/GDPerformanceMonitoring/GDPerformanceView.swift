@@ -271,9 +271,15 @@ internal class GDPerformanceView: UIWindow {
         var threadStatistic: UInt32 = 0
         
         kern = withUnsafeMutablePointer(to: &threadList) {
-            $0.withMemoryRebound(to: (thread_act_array_t?.self)!, capacity: 1) {
-                task_threads(mach_task_self_, $0, &threadCount)
-            }
+            #if swift(>=3.1)
+                return $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
+                    task_threads(mach_task_self_, $0, &threadCount)
+                }
+            #else
+                return $0.withMemoryRebound(to: (thread_act_array_t?.self)!, capacity: 1) {
+                    task_threads(mach_task_self_, $0, &threadCount)
+                }
+            #endif
         }
         if kern != KERN_SUCCESS {
             return -1
