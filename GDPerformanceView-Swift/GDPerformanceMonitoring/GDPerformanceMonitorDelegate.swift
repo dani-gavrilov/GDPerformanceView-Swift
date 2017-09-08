@@ -21,5 +21,6 @@
 //
 
 public protocol GDPerformanceMonitorDelegate: class {
-    func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float)
+    /** Memory unit is byte. */
+    func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float, usedMemory: UInt64, totalMemory: UInt64)
 }
