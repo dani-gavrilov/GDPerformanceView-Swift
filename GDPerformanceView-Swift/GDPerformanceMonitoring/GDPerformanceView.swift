@@ -318,7 +318,16 @@ internal class GDPerformanceView: UIWindow {
     class func windowFrame() -> CGRect {
         var frame = CGRect.zero
         if let window = UIApplication.shared.delegate?.window {
-            frame = CGRect(x: 0.0, y: 0.0, width: window!.bounds.width, height: 20.0)
+            var topInset: CGFloat = 0.0
+            if #available(iOS 11.0, *), let safeAreaTop = window?.rootViewController?.view.safeAreaInsets.top {
+                if safeAreaTop >= 14.0 {
+                    topInset = safeAreaTop - 14.0
+                } else {
+                    topInset = safeAreaTop
+                }
+            }
+            
+            frame = CGRect(x: 0.0, y: topInset, width: window!.bounds.width, height: 20.0)
         }
         return frame
     }

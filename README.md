@@ -2,10 +2,10 @@
 Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS and CPU usage via delegate.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
-[![Pod Version](https://img.shields.io/badge/Pod-1.2.0-6193DF.svg)](https://cocoapods.org/)
-![Swift Version](https://img.shields.io/badge/xCode-8.2+-blue.svg) 
+[![Pod Version](https://img.shields.io/badge/Pod-1.3.0-6193DF.svg)](https://cocoapods.org/)
+![Swift Version](https://img.shields.io/badge/xCode-9.1+-blue.svg)
 ![Swift Version](https://img.shields.io/badge/iOS-8.0+-blue.svg) 
-![Swift Version](https://img.shields.io/badge/Swift-3.0+-orange.svg)
+![Swift Version](https://img.shields.io/badge/Swift-4.0+-orange.svg)
 ![Plaform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 
@@ -13,6 +13,7 @@ Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS a
 ![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_2.PNG?raw=true "Example PNG")
 ![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_3.PNG?raw=true "Example PNG")
 ![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_4.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_5.PNG?raw=true "Example PNG")
 
 ## Installation
 Simply add GDPerformanceMonitoring folder with files to your project, or use CocoaPods.
@@ -21,7 +22,7 @@ Simply add GDPerformanceMonitoring folder with files to your project, or use Coc
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/GDPerformanceView.framework` to an iOS project.
 
 ```ruby
-github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.2.0
+github "dani-gavrilov/GDPerformanceView-Swift" ~> 1.3.0
 ```
 Don't forget to import GDPerformanceView by adding: 
 
@@ -37,7 +38,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 1.2.0'
+	pod 'GDPerformanceView-Swift', '~> 1.3.0'
 end
 ```
 Don't forget to import GDPerformanceView by adding: 
@@ -138,7 +139,7 @@ func performanceMonitorDidReport(fpsValue: Int, cpuValue: Float) {
 
 ## Requirements
 - iOS 8.0+
-- xCode 8.2+
+- xCode 9.1+
 
 
 ## Meta
