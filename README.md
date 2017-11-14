@@ -9,11 +9,11 @@ Shows FPS, CPU usage, app and iOS versions above the status bar and report FPS a
 ![Plaform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 
-![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view.PNG?raw=true "Example PNG")
-![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_2.PNG?raw=true "Example PNG")
-![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_3.PNG?raw=true "Example PNG")
-![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_4.PNG?raw=true "Example PNG")
-![Alt text](https://github.com/dani-gavrilov/GDPerformanceView/blob/master/performance_view_5.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView-Swift/blob/master/performance_view.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView-Swift/blob/master/performance_view_2.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView-Swift/blob/master/performance_view_3.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView-Swift/blob/master/performance_view_4.PNG?raw=true "Example PNG")
+![Alt text](https://github.com/dani-gavrilov/GDPerformanceView-Swift/blob/master/performance_view_5.PNG?raw=true "Example PNG")
 
 ## Installation
 Simply add GDPerformanceMonitoring folder with files to your project, or use CocoaPods.
