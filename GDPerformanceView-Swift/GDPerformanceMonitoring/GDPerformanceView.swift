@@ -360,7 +360,7 @@ internal class GDPerformanceView: UIWindow {
     private func updateMonitoringLabel(fpsUsage: Int, cpuUsage: Float, memory: MemoryUsageTuple) {
         let free = Float(memory.usedMemory) / Float(1024 * 1024)
         let total = Float(memory.totalMemory) / Float(1024 * 1024)
-        let monitoringString = String(format: "FPS : %d, CPU : %.1f%%\nMemory used : %.1f, total : %.0f", fpsUsage, cpuUsage, free, total)
+        let monitoringString = String(format: "FPS : %d, CPU : %.1f%%\nmemory used : %.1f, total : %.0f", fpsUsage, cpuUsage, free, total)
         
         self.monitoringTextLabel.text = monitoringString + self.versionsString
         self.layoutTextLabel()
@@ -399,7 +399,7 @@ internal class GDPerformanceView: UIWindow {
             let systemVersion = UIDevice.current.systemVersion
             
             if !self.appVersionHidden && !self.deviceVersionHidden {
-                versionsString = "\napp v\(applicationVersion) (\(applicationBuild)) iOS v\(systemVersion)"
+                versionsString = "\napp v\(applicationVersion) (\(applicationBuild)), iOS v\(systemVersion)"
             } else if !self.appVersionHidden {
                 versionsString = "\napp v\(applicationVersion) (\(applicationBuild))"
             } else if !self.deviceVersionHidden {
