@@ -194,7 +194,13 @@ internal class GDPerformanceView: UIWindow {
         let rootViewController = GDWindowViewController()
         
         self.rootViewController = rootViewController
+      
+        #if swift(>=4.2)
+        self.windowLevel = UIWindow.Level(UIWindow.Level.statusBar.rawValue + 1.0)
+        #else
         self.windowLevel = UIWindowLevelStatusBar + 1.0
+        #endif
+      
         self.backgroundColor = .clear
         self.clipsToBounds = true
         self.isHidden = true
@@ -220,7 +226,13 @@ internal class GDPerformanceView: UIWindow {
     }
     
     private func subscribeToNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(GDPerformanceView.applicationWillChangeStatusBarFrame(notification:)), name: NSNotification.Name.UIApplicationWillChangeStatusBarFrame, object: nil)
+        #if swift(>=4.2)
+        let notificationName = UIApplication.willChangeStatusBarFrameNotification
+        #else
+        let notificationName = NSNotification.Name.UIApplicationWillChangeStatusBarFrame
+        #endif
+      
+        NotificationCenter.default.addObserver(self, selector: #selector(GDPerformanceView.applicationWillChangeStatusBarFrame(notification:)), name: notificationName, object: nil)
     }
     
     // MARK: Monitoring
