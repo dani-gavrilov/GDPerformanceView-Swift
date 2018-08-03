@@ -208,7 +208,7 @@ internal class GDPerformanceView: UIWindow {
     
     private func setupDisplayLink() {
         self.displayLink = CADisplayLink.init(target: self, selector: #selector(displayLinkAction(displayLink:)))
-        self.displayLink?.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
+        self.displayLink?.add(to: RunLoop.current, forMode: .commonModes)
     }
     
     private func setupTextLayers() {
