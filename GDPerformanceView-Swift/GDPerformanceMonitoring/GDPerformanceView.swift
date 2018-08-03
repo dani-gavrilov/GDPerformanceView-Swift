@@ -210,9 +210,9 @@ internal class GDPerformanceView: UIWindow {
         self.displayLink = CADisplayLink.init(target: self, selector: #selector(displayLinkAction(displayLink:)))
       
         #if swift(>=4.2)
-      self.displayLink?.add(to: RunLoop.current, forMode: .common)
+        self.displayLink?.add(to: RunLoop.current, forMode: .common)
         #else
-      self.displayLink?.add(to: RunLoop.current, forMode: .commonModes)
+        self.displayLink?.add(to: RunLoop.current, forMode: .commonModes)
         #endif
     }
     
