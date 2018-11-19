@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C67DA5621A19A3400C0B2F6 /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67DA5521A19A3400C0B2F6 /* PerformanceСalculator.swift */; };
-		0C67DA5721A19A3400C0B2F6 /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67DA5521A19A3400C0B2F6 /* PerformanceСalculator.swift */; };
-		0C67DA5C21A1B48B00C0B2F6 /* LinkedFramesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67DA5B21A1B48B00C0B2F6 /* LinkedFramesList.swift */; };
-		0C67DA5D21A1B48B00C0B2F6 /* LinkedFramesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67DA5B21A1B48B00C0B2F6 /* LinkedFramesList.swift */; };
-		424EA8361E2BD7C9002E7D6A /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* WindowViewController.swift */; };
-		428FE57F1E1D268100F85C8B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* Protocols.swift */; };
+		0C340AB821A348C600734F1C /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB121A348C600734F1C /* MarginLabel.swift */; };
+		0C340AB921A348C600734F1C /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB121A348C600734F1C /* MarginLabel.swift */; };
+		0C340ABA21A348C600734F1C /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB221A348C600734F1C /* PerformanceView.swift */; };
+		0C340ABB21A348C600734F1C /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB221A348C600734F1C /* PerformanceView.swift */; };
+		0C340ABC21A348C600734F1C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB321A348C600734F1C /* Protocols.swift */; };
+		0C340ABD21A348C600734F1C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB321A348C600734F1C /* Protocols.swift */; };
+		0C340ABE21A348C600734F1C /* LinkedFramesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB421A348C600734F1C /* LinkedFramesList.swift */; };
+		0C340ABF21A348C600734F1C /* LinkedFramesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB421A348C600734F1C /* LinkedFramesList.swift */; };
+		0C340AC021A348C600734F1C /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB521A348C600734F1C /* WindowViewController.swift */; };
+		0C340AC121A348C600734F1C /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB521A348C600734F1C /* WindowViewController.swift */; };
+		0C340AC221A348C600734F1C /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB621A348C600734F1C /* PerformanceMonitor.swift */; };
+		0C340AC321A348C600734F1C /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB621A348C600734F1C /* PerformanceMonitor.swift */; };
+		0C340AC421A348C600734F1C /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB721A348C600734F1C /* PerformanceСalculator.swift */; };
+		0C340AC521A348C600734F1C /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB721A348C600734F1C /* PerformanceСalculator.swift */; };
 		42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06E71E1D18C400A5C840 /* AppDelegate.swift */; };
 		42AD06F41E1D18C400A5C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E81E1D18C400A5C840 /* Assets.xcassets */; };
 		42AD06F51E1D18C400A5C840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E91E1D18C400A5C840 /* LaunchScreen.storyboard */; };
 		42AD06F61E1D18C400A5C840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06EB1E1D18C400A5C840 /* Main.storyboard */; };
-		42AD06F71E1D18C400A5C840 /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* MarginLabel.swift */; };
-		42AD06F81E1D18C400A5C840 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* PerformanceMonitor.swift */; };
-		42AD06F91E1D18C400A5C840 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* PerformanceView.swift */; };
-		42C2CBE81E244D6300A96A93 /* PerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* PerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C2CBEB1E244D6300A96A93 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; };
 		42C2CBEC1E244D6300A96A93 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A5D699591E30FF3600D99B25 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EF1E1D18C400A5C840 /* PerformanceMonitor.swift */; };
-		A5D6995A1E30FF3600D99B25 /* PerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06F01E1D18C400A5C840 /* PerformanceView.swift */; };
-		A5D6995B1E30FF3600D99B25 /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06EE1E1D18C400A5C840 /* MarginLabel.swift */; };
-		A5D6995C1E30FF3600D99B25 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424EA8351E2BD7C9002E7D6A /* WindowViewController.swift */; };
-		A5D6995D1E30FF3600D99B25 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FE57E1E1D268100F85C8B /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,21 +55,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C67DA5521A19A3400C0B2F6 /* PerformanceСalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PerformanceСalculator.swift"; sourceTree = "<group>"; };
-		0C67DA5B21A1B48B00C0B2F6 /* LinkedFramesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedFramesList.swift; sourceTree = "<group>"; };
-		4237B6D81E0FE22A0059FF8B /* GDPerformanceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDPerformanceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		424EA8351E2BD7C9002E7D6A /* WindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowViewController.swift; sourceTree = "<group>"; };
-		428FE57E1E1D268100F85C8B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		0C340AB121A348C600734F1C /* MarginLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLabel.swift; sourceTree = "<group>"; };
+		0C340AB221A348C600734F1C /* PerformanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
+		0C340AB321A348C600734F1C /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		0C340AB421A348C600734F1C /* LinkedFramesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedFramesList.swift; sourceTree = "<group>"; };
+		0C340AB521A348C600734F1C /* WindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowViewController.swift; sourceTree = "<group>"; };
+		0C340AB621A348C600734F1C /* PerformanceMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		0C340AB721A348C600734F1C /* PerformanceСalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PerformanceСalculator.swift"; sourceTree = "<group>"; };
+		4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDPerformanceView-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AD06E71E1D18C400A5C840 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42AD06E81E1D18C400A5C840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42AD06EA1E1D18C400A5C840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42AD06EC1E1D18C400A5C840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42AD06EE1E1D18C400A5C840 /* MarginLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginLabel.swift; sourceTree = "<group>"; };
-		42AD06EF1E1D18C400A5C840 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
-		42AD06F01E1D18C400A5C840 /* PerformanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceView.swift; sourceTree = "<group>"; };
 		42AD06F11E1D18C400A5C840 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C2CBE61E244D6300A96A93 /* PerformanceView-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PerformanceView-iOS.h"; sourceTree = "<group>"; };
+		42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-iOS.h"; sourceTree = "<group>"; };
 		42C2CBE71E244D6300A96A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,8 +95,8 @@
 		4237B6CF1E0FE2290059FF8B = {
 			isa = PBXGroup;
 			children = (
-				42AD06E61E1D18C400A5C840 /* PerformanceView-Swift */,
-				42C2CBE51E244D6300A96A93 /* PerformanceView-iOS */,
+				42AD06E61E1D18C400A5C840 /* GDPerformanceView-Swift */,
+				42C2CBE51E244D6300A96A93 /* GDPerformanceView-iOS */,
 				4237B6D91E0FE22A0059FF8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,46 +104,46 @@
 		4237B6D91E0FE22A0059FF8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4237B6D81E0FE22A0059FF8B /* GDPerformanceView.app */,
+				4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */,
 				42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42AD06E61E1D18C400A5C840 /* PerformanceView-Swift */ = {
+		42AD06E61E1D18C400A5C840 /* GDPerformanceView-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				42AD06ED1E1D18C400A5C840 /* PerformanceMonitoring */,
+				42AD06ED1E1D18C400A5C840 /* GDPerformanceMonitoring */,
 				42AD06E71E1D18C400A5C840 /* AppDelegate.swift */,
 				42AD06E81E1D18C400A5C840 /* Assets.xcassets */,
 				42AD06E91E1D18C400A5C840 /* LaunchScreen.storyboard */,
 				42AD06EB1E1D18C400A5C840 /* Main.storyboard */,
 				42AD06F11E1D18C400A5C840 /* Info.plist */,
 			);
-			path = "PerformanceView-Swift";
+			path = "GDPerformanceView-Swift";
 			sourceTree = "<group>";
 		};
-		42AD06ED1E1D18C400A5C840 /* PerformanceMonitoring */ = {
+		42AD06ED1E1D18C400A5C840 /* GDPerformanceMonitoring */ = {
 			isa = PBXGroup;
 			children = (
-				42AD06EF1E1D18C400A5C840 /* PerformanceMonitor.swift */,
-				42AD06F01E1D18C400A5C840 /* PerformanceView.swift */,
-				0C67DA5521A19A3400C0B2F6 /* PerformanceСalculator.swift */,
-				42AD06EE1E1D18C400A5C840 /* MarginLabel.swift */,
-				424EA8351E2BD7C9002E7D6A /* WindowViewController.swift */,
-				428FE57E1E1D268100F85C8B /* Protocols.swift */,
-				0C67DA5B21A1B48B00C0B2F6 /* LinkedFramesList.swift */,
+				0C340AB621A348C600734F1C /* PerformanceMonitor.swift */,
+				0C340AB221A348C600734F1C /* PerformanceView.swift */,
+				0C340AB721A348C600734F1C /* PerformanceСalculator.swift */,
+				0C340AB521A348C600734F1C /* WindowViewController.swift */,
+				0C340AB121A348C600734F1C /* MarginLabel.swift */,
+				0C340AB321A348C600734F1C /* Protocols.swift */,
+				0C340AB421A348C600734F1C /* LinkedFramesList.swift */,
 			);
-			path = PerformanceMonitoring;
+			path = GDPerformanceMonitoring;
 			sourceTree = "<group>";
 		};
-		42C2CBE51E244D6300A96A93 /* PerformanceView-iOS */ = {
+		42C2CBE51E244D6300A96A93 /* GDPerformanceView-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				42C2CBE61E244D6300A96A93 /* PerformanceView-iOS.h */,
+				42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */,
 				42C2CBE71E244D6300A96A93 /* Info.plist */,
 			);
-			path = "PerformanceView-iOS";
+			path = "GDPerformanceView-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C2CBE81E244D6300A96A93 /* PerformanceView-iOS.h in Headers */,
+				42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 			);
 			name = "GDPerformanceView-Swift";
 			productName = "GDPerfomanceView-Swift";
-			productReference = 4237B6D81E0FE22A0059FF8B /* GDPerformanceView.app */;
+			productReference = 4237B6D81E0FE22A0059FF8B /* GDPerformanceView-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		42C2CBE31E244D6300A96A93 /* GDPerformanceView-iOS */ = {
@@ -210,13 +210,12 @@
 					4237B6D71E0FE2290059FF8B = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = RU64C364MT;
-						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					42C2CBE31E244D6300A96A93 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RU64C364MT;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -265,14 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C67DA5C21A1B48B00C0B2F6 /* LinkedFramesList.swift in Sources */,
+				0C340ABE21A348C600734F1C /* LinkedFramesList.swift in Sources */,
 				42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */,
-				42AD06F71E1D18C400A5C840 /* MarginLabel.swift in Sources */,
-				0C67DA5621A19A3400C0B2F6 /* PerformanceСalculator.swift in Sources */,
-				42AD06F91E1D18C400A5C840 /* PerformanceView.swift in Sources */,
-				424EA8361E2BD7C9002E7D6A /* WindowViewController.swift in Sources */,
-				428FE57F1E1D268100F85C8B /* Protocols.swift in Sources */,
-				42AD06F81E1D18C400A5C840 /* PerformanceMonitor.swift in Sources */,
+				0C340ABC21A348C600734F1C /* Protocols.swift in Sources */,
+				0C340AC221A348C600734F1C /* PerformanceMonitor.swift in Sources */,
+				0C340AC421A348C600734F1C /* PerformanceСalculator.swift in Sources */,
+				0C340AC021A348C600734F1C /* WindowViewController.swift in Sources */,
+				0C340AB821A348C600734F1C /* MarginLabel.swift in Sources */,
+				0C340ABA21A348C600734F1C /* PerformanceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C67DA5D21A1B48B00C0B2F6 /* LinkedFramesList.swift in Sources */,
-				0C67DA5721A19A3400C0B2F6 /* PerformanceСalculator.swift in Sources */,
-				A5D699591E30FF3600D99B25 /* PerformanceMonitor.swift in Sources */,
-				A5D6995A1E30FF3600D99B25 /* PerformanceView.swift in Sources */,
-				A5D6995B1E30FF3600D99B25 /* MarginLabel.swift in Sources */,
-				A5D6995C1E30FF3600D99B25 /* WindowViewController.swift in Sources */,
-				A5D6995D1E30FF3600D99B25 /* Protocols.swift in Sources */,
+				0C340AC521A348C600734F1C /* PerformanceСalculator.swift in Sources */,
+				0C340AC121A348C600734F1C /* WindowViewController.swift in Sources */,
+				0C340AB921A348C600734F1C /* MarginLabel.swift in Sources */,
+				0C340ABB21A348C600734F1C /* PerformanceView.swift in Sources */,
+				0C340ABF21A348C600734F1C /* LinkedFramesList.swift in Sources */,
+				0C340AC321A348C600734F1C /* PerformanceMonitor.swift in Sources */,
+				0C340ABD21A348C600734F1C /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +373,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -425,7 +423,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -437,11 +434,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RU64C364MT;
-				INFOPLIST_FILE = "PerformanceView-Swift/Info.plist";
+				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-Swift";
-				PRODUCT_NAME = GDPerformanceView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -452,11 +449,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RU64C364MT;
-				INFOPLIST_FILE = "PerformanceView-Swift/Info.plist";
+				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-Swift";
-				PRODUCT_NAME = GDPerformanceView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -471,13 +468,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "PerformanceView-iOS/Info.plist";
+				INFOPLIST_FILE = "GDPerformanceView-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-iOS";
 				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -494,13 +492,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "PerformanceView-iOS/Info.plist";
+				INFOPLIST_FILE = "GDPerformanceView-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-iOS";
 				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

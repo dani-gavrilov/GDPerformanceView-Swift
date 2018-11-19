@@ -22,10 +22,10 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for PerformanceView-iOS.
-FOUNDATION_EXPORT double PerformanceView_iOSVersionNumber;
+//! Project version number for GDPerformanceView-iOS.
+FOUNDATION_EXPORT double GDPerformanceView_iOSVersionNumber;
 
-//! Project version string for PerformanceView-iOS.
-FOUNDATION_EXPORT const unsigned char PerformanceView_iOSVersionString[];
+//! Project version string for GDPerformanceView-iOS.
+FOUNDATION_EXPORT const unsigned char GDPerformanceView_iOSVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <PerformanceView_iOS/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <GDPerformanceView_iOS/PublicHeader.h>
