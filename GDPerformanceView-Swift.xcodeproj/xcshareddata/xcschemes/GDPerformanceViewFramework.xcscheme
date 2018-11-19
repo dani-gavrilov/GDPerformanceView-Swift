@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "42C2CBE31E244D6300A96A93"
-               BuildableName = "PerformanceView.framework"
+               BuildableName = "GDPerformanceView.framework"
                BlueprintName = "GDPerformanceView-iOS"
                ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42C2CBE31E244D6300A96A93"
-            BuildableName = "PerformanceView.framework"
+            BuildableName = "GDPerformanceView.framework"
             BlueprintName = "GDPerformanceView-iOS"
             ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42C2CBE31E244D6300A96A93"
-            BuildableName = "PerformanceView.framework"
+            BuildableName = "GDPerformanceView.framework"
             BlueprintName = "GDPerformanceView-iOS"
             ReferencedContainer = "container:GDPerformanceView-Swift.xcodeproj">
          </BuildableReference>
