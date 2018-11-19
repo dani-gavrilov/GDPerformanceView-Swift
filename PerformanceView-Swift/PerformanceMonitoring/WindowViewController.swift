@@ -22,34 +22,50 @@
 
 import UIKit
 
-internal class GDMarginLabel: UILabel {
+// MARK: Class Definition
+
+/// A window controller to override the properties of the status bar so that developers can choose their own preferences.
+internal class WindowViewController: UIViewController, StatusBarConfigurator {
     
-    // MARK: Private Properties
+    // MARK: Public Properties
     
-    private var edgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)
+    /// Overrides prefersStatusBarHidden.
+    public var statusBarHidden = false {
+        didSet {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    /// Overrides preferredStatusBarStyle.
+    public var statusBarStyle = UIStatusBarStyle.default {
+        didSet {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
     
     // MARK: Properties Overriders
     
-    override internal var intrinsicContentSize: CGSize {
+    override var prefersStatusBarHidden: Bool {
         get {
-            var size = super.intrinsicContentSize
-            size.width += self.edgeInsets.left + self.edgeInsets.right
-            size.height += self.edgeInsets.top + self.edgeInsets.bottom
-            return size
+            return self.statusBarHidden
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get {
+            return self.statusBarStyle
         }
     }
     
     // MARK: Init Methods & Superclass Overriders
     
-    override func drawText(in rect: CGRect) {
-        super.drawText(in: UIEdgeInsetsInsetRect(rect, self.edgeInsets))
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = .clear
     }
     
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
-        var sizeThatFits = super.sizeThatFits(size)
-        sizeThatFits.width += self.edgeInsets.left + self.edgeInsets.right
-        sizeThatFits.height += self.edgeInsets.top + self.edgeInsets.bottom
-        return sizeThatFits
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    
 }

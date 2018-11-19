@@ -22,45 +22,27 @@
 
 import UIKit
 
-internal class GDWindowViewController: UIViewController {
-    
-    // MARK: Private Properties
-    
-    private var selectedStatusBarHidden: Bool = false
-    
-    private var selectedStatusBarStyle: UIStatusBarStyle = UIStatusBarStyle.default
-    
-    // MARK: Properties Overriders
-    
-    override var prefersStatusBarHidden: Bool {
-        get {
-            return self.selectedStatusBarHidden
-        }
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        get {
-            return self.selectedStatusBarStyle
-        }
-    }
-    
-    // MARK: Init Methods & Superclass Overriders
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.view.backgroundColor = .clear
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    // MARK: Public Methods
-    
-    internal func configureStatusBarAppearance(prefersStatusBarHidden: Bool, preferredStatusBarStyle: UIStatusBarStyle) {
-        self.selectedStatusBarHidden = prefersStatusBarHidden
-        self.selectedStatusBarStyle = preferredStatusBarStyle
-    }
-    
+/// Memory usage tuple. Contains used and total memory in bytes.
+public typealias MemoryUsage = (used: UInt64, total: UInt64)
+
+/// Performance report tuple. Contains CPU usage in percentages, FPS and memory usage.
+public typealias PerformanceReport = (cpuUsage: Double, fps: Int, memoryUsage: MemoryUsage)
+
+/// Performance monitor delegate. Gets called on the main thread.
+public protocol PerformanceMonitorDelegate: class {
+    /// Reports monitoring information to the receiver.
+    ///
+    /// - Parameters:
+    ///   - performanceReport: Performance report tuple. Contains CPU usage in percentages, FPS and memory usage.
+    func performanceMonitor(didReport performanceReport: PerformanceReport)
+}
+
+public protocol PerformanceViewConfigurator {
+    var options: PerformanceMonitor.DisplayOptions { get set }
+    var style: PerformanceMonitor.Style { get set }
+}
+
+public protocol StatusBarConfigurator {
+    var statusBarHidden: Bool { get set }
+    var statusBarStyle: UIStatusBarStyle { get set }
 }
