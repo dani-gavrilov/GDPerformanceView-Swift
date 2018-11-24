@@ -2,7 +2,7 @@
 Shows FPS, CPU and memory usage, device model, app and iOS versions above the status bar and report FPS, CPU and memory usage via delegate.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
-[![Pod Version](https://img.shields.io/badge/Pod-2.0.1-6193DF.svg)](https://cocoapods.org/)
+[![Pod Version](https://img.shields.io/badge/Pod-2.0.2-6193DF.svg)](https://cocoapods.org/)
 ![Swift Version](https://img.shields.io/badge/xCode-10.1+-blue.svg)
 ![Swift Version](https://img.shields.io/badge/iOS-8.0+-blue.svg) 
 ![Swift Version](https://img.shields.io/badge/Swift-4.2+-orange.svg)
@@ -21,7 +21,7 @@ Simply add GDPerformanceMonitoring folder with files to your project, or use Coc
 Create a `Cartfile` that lists the framework and run `carthage update`. Follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios) to add `$(SRCROOT)/Carthage/Build/iOS/GDPerformanceView.framework` to an iOS project.
 
 ```ruby
-github "dani-gavrilov/GDPerformanceView-Swift" ~> 2.0.1
+github "dani-gavrilov/GDPerformanceView-Swift" ~> 2.0.2
 ```
 Don't forget to import GDPerformanceView by adding: 
 
@@ -37,7 +37,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'project_name' do
-	pod 'GDPerformanceView-Swift', '~> 2.0.1'
+	pod 'GDPerformanceView-Swift', '~> 2.0.2'
 end
 ```
 Don't forget to import GDPerformanceView by adding: 
