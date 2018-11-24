@@ -41,6 +41,7 @@ public protocol PerformanceViewConfigurator {
     var options: PerformanceMonitor.DisplayOptions { get set }
     var userInfo: PerformanceMonitor.UserInfo { get set }
     var style: PerformanceMonitor.Style { get set }
+    var interactors: [UIGestureRecognizer]? { get set }
 }
 
 public protocol StatusBarConfigurator {

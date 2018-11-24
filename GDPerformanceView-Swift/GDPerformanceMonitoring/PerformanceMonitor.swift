@@ -116,13 +116,14 @@ public class PerformanceMonitor {
     required public init(options: DisplayOptions = .default, style: Style = .dark, delegate: PerformanceMonitorDelegate? = nil) {
         self.performanceView.options = options
         self.performanceView.style = style
+        
         self.performanceCalculator.onReport = { [weak self] (performanceReport) in
             DispatchQueue.main.async {
                 self?.apply(performanceReport: performanceReport)
             }
         }
-        self.delegate = delegate
         
+        self.delegate = delegate
         self.subscribeToNotifications()
     }
     

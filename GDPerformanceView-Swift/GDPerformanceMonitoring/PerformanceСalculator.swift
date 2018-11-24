@@ -33,7 +33,7 @@ internal class PerformanceCalculator {
         static let accumulationTimeInSeconds = 1.0
     }
     
-    // MARK: Public Properties
+    // MARK: Internal Properties
     
     internal var onReport: ((_ performanceReport: PerformanceReport) -> ())?
     

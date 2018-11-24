@@ -56,7 +56,14 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     /// Allows to change the appearance of the displayed information.
     public var style = PerformanceMonitor.Style.dark {
         didSet {
-            self.configureView(withStyle: style)
+            self.configureView(withStyle: self.style)
+        }
+    }
+    
+    /// Allows to add gesture recognizers to the view.
+    public var interactors: [UIGestureRecognizer]? {
+        didSet {
+            self.configureView(withInteractors: self.interactors)
         }
     }
     
@@ -95,7 +102,10 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     }
     
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        return false
+        guard let interactors = self.interactors, interactors.count > 0 else {
+            return false
+        }
+        return super.point(inside: point, with: event)
     }
     
     deinit {
@@ -233,6 +243,20 @@ private extension PerformanceView {
             self.monitoringTextLabel.layer.cornerRadius = cornerRadius
             self.monitoringTextLabel.textColor = textColor
             self.monitoringTextLabel.font = font
+        }
+    }
+    
+    func configureView(withInteractors interactors: [UIGestureRecognizer]?) {
+        if let recognizers = self.gestureRecognizers {
+            for recognizer in recognizers {
+                self.removeGestureRecognizer(recognizer)
+            }
+        }
+        
+        if let recognizers = interactors {
+            for recognizer in recognizers {
+                self.addGestureRecognizer(recognizer)
+            }
         }
     }
 }

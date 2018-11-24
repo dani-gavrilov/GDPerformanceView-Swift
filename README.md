@@ -1,4 +1,4 @@
-#GDPerformanceView-Swift
+# GDPerformanceView-Swift
 Shows FPS, CPU and memory usage, device model, app and iOS versions above the status bar and report FPS, CPU and memory usage via delegate.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
@@ -139,6 +139,20 @@ Also you can override prefersStatusBarHidden and preferredStatusBarStyle to matc
 self.performanceView?.statusBarConfigurator.statusBarHidden = false
 self.performanceView?.statusBarConfigurator.statusBarStyle = .lightContent
 ```
+
+#### Interactions
+
+You can interact with performance view via gesture recognizers. Add them by using:
+
+```swift
+self.performanceView?.performanceViewConfigurator.interactors = [tapGesture, swipeGesture]
+```
+If interactors is nil or empty `point(inside:with:)` of the view will return false to make all touches pass underneath. So to remove interactors just call the following command:
+
+```swift
+self.performanceView?.performanceViewConfigurator.interactors = nil
+```
+By default, interactors are nil.
 
 #### Delegate
 
