@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     #if DEBUG
         PerformanceMonitor.shared().start()
+        PerformanceMonitor.shared().performanceViewConfigurator.userInfo = .custom(string: "Launch date \(Date())")
     #endif
 
         return true

@@ -34,6 +34,11 @@ public class PerformanceMonitor {
         case custom(backgroundColor: UIColor, borderColor: UIColor, borderWidth: CGFloat, cornerRadius: CGFloat, textColor: UIColor, font: UIFont)
     }
     
+    public enum UserInfo {
+        case none
+        case custom(string: String)
+    }
+    
     private enum States {
         case started
         case paused
