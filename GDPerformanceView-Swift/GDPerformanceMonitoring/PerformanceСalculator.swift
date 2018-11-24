@@ -92,53 +92,37 @@ private extension PerformanceCalculator {
     }
     
     func cpuUsage() -> Double {
-        let basicInfoCount = MemoryLayout<mach_task_basic_info_data_t>.size / MemoryLayout<natural_t>.size
-        
-        var kern: kern_return_t
-        var threadList = UnsafeMutablePointer<thread_act_t>.allocate(capacity: 1)
-        var threadCount = mach_msg_type_number_t(basicInfoCount)
-        var threadInfo = thread_basic_info.init()
-        var threadInfoCount: mach_msg_type_number_t
-        var threadBasicInfo: thread_basic_info
-        var threadStatistic: UInt32 = 0
-        
-        kern = withUnsafeMutablePointer(to: &threadList) {
-            #if swift(>=3.1)
-            return $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
-                task_threads(mach_task_self_, $0, &threadCount)
-            }
-            #else
-            return $0.withMemoryRebound(to: (thread_act_array_t?.self)!, capacity: 1) {
-            task_threads(mach_task_self_, $0, &threadCount)
-            }
-            #endif
-        }
-        
-        if kern != KERN_SUCCESS {
-            return -1
-        }
-        if threadCount > 0 {
-            threadStatistic += threadCount
-        }
-        
         var totalUsageOfCPU: Double = 0.0
-        for i in 0..<threadCount {
-            threadInfoCount = mach_msg_type_number_t(THREAD_INFO_MAX)
-            kern = withUnsafeMutablePointer(to: &threadInfo) {
-                $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
-                    thread_info(threadList[Int(i)], thread_flavor_t(THREAD_BASIC_INFO), $0, &threadInfoCount)
+        var threadsList = UnsafeMutablePointer<thread_act_t>.allocate(capacity: 1)
+        var threadsCount = mach_msg_type_number_t(0)
+        let threadsResult = withUnsafeMutablePointer(to: &threadsList) {
+            return $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
+                task_threads(mach_task_self_, $0, &threadsCount)
+            }
+        }
+        
+        if threadsResult == KERN_SUCCESS {
+            for index in 0..<threadsCount {
+                var threadInfo = thread_basic_info()
+                var threadInfoCount = mach_msg_type_number_t(THREAD_INFO_MAX)
+                let infoResult = withUnsafeMutablePointer(to: &threadInfo) {
+                    $0.withMemoryRebound(to: integer_t.self, capacity: 1) {
+                        thread_info(threadsList[Int(index)], thread_flavor_t(THREAD_BASIC_INFO), $0, &threadInfoCount)
+                    }
+                }
+                
+                guard infoResult == KERN_SUCCESS else {
+                    break
+                }
+                
+                let threadBasicInfo = threadInfo as thread_basic_info
+                if threadBasicInfo.flags & TH_FLAGS_IDLE == 0 {
+                    totalUsageOfCPU = (totalUsageOfCPU + (Double(threadBasicInfo.cpu_usage) / Double(TH_USAGE_SCALE) * 100.0))
                 }
             }
-            
-            if kern != KERN_SUCCESS {
-                return -1
-            }
-            
-            threadBasicInfo = threadInfo as thread_basic_info
-            if threadBasicInfo.flags & TH_FLAGS_IDLE == 0 {
-                totalUsageOfCPU = totalUsageOfCPU + Double(threadBasicInfo.cpu_usage) / Double(TH_USAGE_SCALE) * 100.0
-            }
         }
+        
+        vm_deallocate(mach_task_self_, vm_address_t(bitPattern: threadsList), vm_size_t(Int(threadsCount) * MemoryLayout<thread_t>.stride))
         return totalUsageOfCPU
     }
     
