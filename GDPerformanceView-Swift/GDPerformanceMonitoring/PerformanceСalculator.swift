@@ -93,7 +93,7 @@ private extension PerformanceCalculator {
     
     func cpuUsage() -> Double {
         var totalUsageOfCPU: Double = 0.0
-        var threadsList = UnsafeMutablePointer<thread_act_t>.allocate(capacity: 1)
+        var threadsList = UnsafeMutablePointer(mutating: [thread_act_t]())
         var threadsCount = mach_msg_type_number_t(0)
         let threadsResult = withUnsafeMutablePointer(to: &threadsList) {
             return $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
@@ -122,7 +122,7 @@ private extension PerformanceCalculator {
             }
         }
         
-        vm_deallocate(mach_task_self_, vm_address_t(bitPattern: threadsList), vm_size_t(Int(threadsCount) * MemoryLayout<thread_t>.stride))
+        vm_deallocate(mach_task_self_, vm_address_t(UInt(bitPattern: threadsList)), vm_size_t(Int(threadsCount) * MemoryLayout<thread_t>.stride))
         return totalUsageOfCPU
     }
     
