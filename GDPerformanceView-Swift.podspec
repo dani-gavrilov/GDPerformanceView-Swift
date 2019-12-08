@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.author       = { "Gavrilov Daniil" => "daniilmbox@gmail.com" }
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/dani-gavrilov/GDPerformanceView-Swift.git", :tag => "2.0.2" }
+  s.source       = { :git => "https://github.com/dani-gavrilov/GDPerformanceView-Swift.git", :tag => s.version.to_s }
   s.source_files = "GDPerformanceView-Swift/GDPerformanceMonitoring/*.swift"
   s.frameworks = "UIKit", "Foundation", "QuartzCore"  
   s.requires_arc = true
-  s.swift_version = '4.2'
+  s.swift_versions = ['4.2', '5.0']
 end
