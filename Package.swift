@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "GDPerformanceView-Swift",
             dependencies: [],
-            path: "./GDPerformanceView-Swift/GDPerformanceMonitoring"),
+            path: "GDPerformanceView-Swift/GDPerformanceMonitoring"),
         .testTarget(
             name: "GDPerformanceView-SwiftTests",
             dependencies: ["GDPerformanceView-Swift"]),
