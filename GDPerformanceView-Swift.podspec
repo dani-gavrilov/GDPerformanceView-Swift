@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GDPerformanceView-Swift"
-  s.version      = "2.0.3"
+  s.version      = "2.0.4"
   s.summary      = "Shows FPS, CPU and memory usage, device model, app and iOS versions above the status bar and report FPS, CPU and memory usage via delegate."
   s.homepage     = "https://github.com/dani-gavrilov/GDPerformanceView-Swift"
   s.license      = { :type => "MIT", :file => "LICENSE" }
