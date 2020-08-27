@@ -77,6 +77,9 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     
     required internal init() {
         super.init(frame: PerformanceView.windowFrame(withPrefferedHeight: Constants.prefferedHeight))
+        if #available(iOS 13, *) {
+            self.windowScene = UIApplication.shared.keyWindowScene
+        }
         
         self.configureWindow()
         self.configureMonitoringTextLabel()
@@ -337,7 +340,7 @@ private extension PerformanceView {
 
 private extension PerformanceView {
     class func windowFrame(withPrefferedHeight height: CGFloat) -> CGRect {
-        guard let window = UIApplication.shared.delegate?.window as? UIWindow else {
+        guard let window = UIApplication.shared.keyWindow else {
             return .zero
         }
         

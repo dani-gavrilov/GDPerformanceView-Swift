@@ -28,6 +28,7 @@
 		42C2CBE81E244D6300A96A93 /* GDPerformanceView-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C2CBEB1E244D6300A96A93 /* GDPerformanceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; };
 		42C2CBEC1E244D6300A96A93 /* GDPerformanceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB46D87A24F864D4006F54B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46D87824F86404006F54B3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		42C2CBE41E244D6300A96A93 /* GDPerformanceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C2CBE61E244D6300A96A93 /* GDPerformanceView-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-iOS.h"; sourceTree = "<group>"; };
 		42C2CBE71E244D6300A96A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB46D87824F86404006F54B3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				0C340AB121A348C600734F1C /* MarginLabel.swift */,
 				0C340AB321A348C600734F1C /* Protocols.swift */,
 				0C340AB421A348C600734F1C /* LinkedFramesList.swift */,
+				EB46D87824F86404006F54B3 /* Extensions.swift */,
 			);
 			path = GDPerformanceMonitoring;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				0C340AC521A348C600734F1C /* PerformanceСalculator.swift in Sources */,
 				0C340AC121A348C600734F1C /* WindowViewController.swift in Sources */,
 				0C340AB921A348C600734F1C /* MarginLabel.swift in Sources */,
+				EB46D87A24F864D4006F54B3 /* Extensions.swift in Sources */,
 				0C340ABB21A348C600734F1C /* PerformanceView.swift in Sources */,
 				0C340ABF21A348C600734F1C /* LinkedFramesList.swift in Sources */,
 				0C340AC321A348C600734F1C /* PerformanceMonitor.swift in Sources */,
