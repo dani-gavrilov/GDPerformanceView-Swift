@@ -169,8 +169,8 @@ func performanceMonitor(didReport performanceReport: PerformanceReport) {
 ```
 
 ## Requirements
-- iOS 8.0+
-- xCode 10.1+
+- iOS 9.0+
+- xCode 12.0+
 
 ## Donations
 
