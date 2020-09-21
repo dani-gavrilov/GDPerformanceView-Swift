@@ -21,6 +21,7 @@
 		0C340AC321A348C600734F1C /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB621A348C600734F1C /* PerformanceMonitor.swift */; };
 		0C340AC421A348C600734F1C /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB721A348C600734F1C /* PerformanceСalculator.swift */; };
 		0C340AC521A348C600734F1C /* PerformanceСalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C340AB721A348C600734F1C /* PerformanceСalculator.swift */; };
+		1B076A082518CB1A0086536C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46D87824F86404006F54B3 /* Extensions.swift */; };
 		42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AD06E71E1D18C400A5C840 /* AppDelegate.swift */; };
 		42AD06F41E1D18C400A5C840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E81E1D18C400A5C840 /* Assets.xcassets */; };
 		42AD06F51E1D18C400A5C840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AD06E91E1D18C400A5C840 /* LaunchScreen.storyboard */; };
@@ -207,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Daniil Gavrilov";
 				TargetAttributes = {
 					4237B6D71E0FE2290059FF8B = {
@@ -268,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C340ABE21A348C600734F1C /* LinkedFramesList.swift in Sources */,
+				1B076A082518CB1A0086536C /* Extensions.swift in Sources */,
 				42AD06F31E1D18C400A5C840 /* AppDelegate.swift in Sources */,
 				0C340ABC21A348C600734F1C /* Protocols.swift in Sources */,
 				0C340AC221A348C600734F1C /* PerformanceMonitor.swift in Sources */,
@@ -348,6 +350,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -372,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -407,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -425,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -441,9 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RU64C364MT;
 				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.0.3;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -457,9 +461,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RU64C364MT;
 				INFOPLIST_FILE = "GDPerformanceView-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 2.0.3;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -478,9 +482,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "GDPerformanceView-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 2.0.3;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-iOS";
 				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;
@@ -503,9 +507,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "GDPerformanceView-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 2.0.3;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GD.GDPerformanceView-iOS";
 				PRODUCT_NAME = GDPerformanceView;
 				SKIP_INSTALL = YES;

@@ -93,7 +93,7 @@ private extension PerformanceCalculator {
     
     func cpuUsage() -> Double {
         var totalUsageOfCPU: Double = 0.0
-        var threadsList = UnsafeMutablePointer(mutating: [thread_act_t]())
+        var threadsList: thread_act_array_t?
         var threadsCount = mach_msg_type_number_t(0)
         let threadsResult = withUnsafeMutablePointer(to: &threadsList) {
             return $0.withMemoryRebound(to: thread_act_array_t?.self, capacity: 1) {
@@ -101,7 +101,7 @@ private extension PerformanceCalculator {
             }
         }
         
-        if threadsResult == KERN_SUCCESS {
+        if threadsResult == KERN_SUCCESS, let threadsList = threadsList {
             for index in 0..<threadsCount {
                 var threadInfo = thread_basic_info()
                 var threadInfoCount = mach_msg_type_number_t(THREAD_INFO_MAX)
