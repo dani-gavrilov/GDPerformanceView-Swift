@@ -78,7 +78,7 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     required internal init() {
         super.init(frame: PerformanceView.windowFrame(withPrefferedHeight: Constants.prefferedHeight))
         if #available(iOS 13, *) {
-            self.windowScene = UIApplication.shared.keyWindowScene
+            self.windowScene = PerformanceView.keyWindowScene()
         }
         
         self.configureWindow()
@@ -329,7 +329,7 @@ private extension PerformanceView {
     }
     
     func canBeVisible() -> Bool {
-        if let window = UIApplication.shared.keyWindow, window.isKeyWindow, !window.isHidden {
+        if let window = PerformanceView.keyWindow(), window.isKeyWindow, !window.isHidden {
             return true
         }
         return false
@@ -340,7 +340,7 @@ private extension PerformanceView {
 
 private extension PerformanceView {
     class func windowFrame(withPrefferedHeight height: CGFloat) -> CGRect {
-        guard let window = UIApplication.shared.keyWindow else {
+        guard let window = PerformanceView.keyWindow() else {
             return .zero
         }
         
@@ -357,5 +357,20 @@ private extension PerformanceView {
             }
         }
         return CGRect(x: 0.0, y: topInset, width: window.bounds.width, height: height)
+    }
+
+    class func keyWindow() -> UIWindow? {
+        if #available(iOS 13, *) {
+            return UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        } else {
+            return UIApplication.shared.keyWindow
+        }
+    }
+    
+    @available(iOS 13, *)
+    class func keyWindowScene() -> UIWindowScene? {
+        return UIApplication.shared.connectedScenes
+            .filter { $0.activationState == .foregroundActive }
+            .first as? UIWindowScene
     }
 }
