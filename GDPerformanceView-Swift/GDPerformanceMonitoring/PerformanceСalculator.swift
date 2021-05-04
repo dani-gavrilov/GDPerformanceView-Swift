@@ -85,7 +85,8 @@ private extension PerformanceCalculator {
             let cpuUsage = self.cpuUsage()
             let fps = self.linkedFramesList.count
             let memoryUsage = self.memoryUsage()
-            self.report(cpuUsage: cpuUsage, fps: fps, memoryUsage: memoryUsage)
+            let thermalState = self.thermalState()
+            self.report(cpuUsage: cpuUsage, fps: fps, memoryUsage: memoryUsage, thermalState: thermalState)
         } else if let start = self.startTimestamp, Date().timeIntervalSince1970 - start >= Constants.accumulationTimeInSeconds {
             self.accumulatedInformationIsEnough = true
         }
@@ -143,6 +144,25 @@ private extension PerformanceCalculator {
         let total = ProcessInfo.processInfo.physicalMemory
         return (used, total)
     }
+    
+    func thermalState() -> String {
+        guard #available(iOS 11, *) else {
+            return "Unknown"
+        }
+        
+        switch ProcessInfo.processInfo.thermalState {
+        case .nominal:
+            return "Nominal"
+        case .fair:
+            return "Fair"
+        case .serious:
+            return "Serious"
+        case .critical:
+            return "Critical"
+        default:
+            return "Unknown"
+        }
+    }
 }
 
 // MARK: Configurations
@@ -158,8 +178,8 @@ private extension PerformanceCalculator {
 // MARK: Support Methods
 
 private extension PerformanceCalculator {
-    func report(cpuUsage: Double, fps: Int, memoryUsage: MemoryUsage) {
-        let performanceReport = (cpuUsage: cpuUsage, fps: fps, memoryUsage: memoryUsage)
+    func report(cpuUsage: Double, fps: Int, memoryUsage: MemoryUsage, thermalState: String) {
+        let performanceReport = (cpuUsage: cpuUsage, fps: fps, memoryUsage: memoryUsage, thermalState: thermalState)
         self.onReport?(performanceReport)
     }
 }
