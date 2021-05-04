@@ -100,6 +100,7 @@ You can choose from:
 * application - Application version with build number.
 * device - Device model.
 * system - System name with version.
+* thermal - System thermal state
 
 Also you can mix them, but order doesn't matter:
 

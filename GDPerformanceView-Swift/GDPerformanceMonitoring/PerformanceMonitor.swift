@@ -65,11 +65,14 @@ public class PerformanceMonitor {
         /// System name with version.
         public static let system = DisplayOptions(rawValue: 1 << 4)
         
+        /// Thermal State (available iOS 11+)
+        public static let thermal = DisplayOptions(rawValue: 1 << 5)
+        
         /// Default dispaly options - CPU usage and FPS, application version with build number and system name with version.
         public static let `default`: DisplayOptions = [.performance, .application, .system]
         
         /// All dispaly options.
-        public static let all: DisplayOptions = [.performance, .memory, .application, .device, .system]
+        public static let all: DisplayOptions = [.performance, .memory, .application, .device, .system, .thermal]
         
         public init(rawValue: Int) {
             self.rawValue = rawValue

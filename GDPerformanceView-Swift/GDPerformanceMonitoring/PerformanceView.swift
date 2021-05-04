@@ -147,6 +147,11 @@ internal extension PerformanceView {
             monitoringTexts.append(memory)
         }
         
+        if self.options.contains(.thermal) {
+            let thermal = "Thermal State: \(report.thermalState)"
+            monitoringTexts.append(thermal)
+        }
+        
         if let staticInformation = self.staticInformation {
             monitoringTexts.append(staticInformation)
         }
