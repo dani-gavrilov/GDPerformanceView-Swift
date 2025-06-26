@@ -97,10 +97,18 @@ internal class PerformanceView: UIWindow, PerformanceViewConfigurator {
     }
     
     override func becomeKey() {
-        self.isHidden = true
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-            self.showViewAboveStatusBarIfNeeded()
+        // Don't hide window on iOS 15+ as it causes display issues
+        if #available(iOS 15.0, *) {
+            // Show directly without delay
+            DispatchQueue.main.async {
+                self.showViewAboveStatusBarIfNeeded()
+            }
+        } else {
+            // Keep original logic
+            self.isHidden = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+                self.showViewAboveStatusBarIfNeeded()
+            }
         }
     }
     
@@ -174,7 +182,15 @@ private extension PerformanceView {
 private extension PerformanceView {
     func configureWindow() {
         self.rootViewController = WindowViewController()
-        self.windowLevel = UIWindow.Level.statusBar + 1.0
+        
+        // Use very high window level to ensure display on iOS 15+
+        // Avoid conflicts with system windows
+        if #available(iOS 15.0, *) {
+            self.windowLevel = UIWindow.Level(rawValue: 10000000)
+        } else {
+            self.windowLevel = UIWindow.Level.statusBar + 1.0
+        }
+        
         self.backgroundColor = .clear
         self.clipsToBounds = true
         self.isHidden = true
@@ -218,8 +234,19 @@ private extension PerformanceView {
     }
     
     func subscribeToNotifications() {
-        NotificationCenter.default.addObserver(forName: UIApplication.willChangeStatusBarFrameNotification, object: nil, queue: .main) { [weak self] (notification) in
-            self?.applicationWillChangeStatusBarFrame(notification: notification)
+        // UIApplication.willChangeStatusBarFrameNotification is deprecated in iOS 15+
+        if #available(iOS 15.0, *) {
+            // Use scene-based notifications instead
+            NotificationCenter.default.addObserver(forName: UIScene.willConnectNotification, object: nil, queue: .main) { [weak self] _ in
+                self?.layoutWindow()
+            }
+            NotificationCenter.default.addObserver(forName: UIScene.didActivateNotification, object: nil, queue: .main) { [weak self] _ in
+                self?.layoutWindow()
+            }
+        } else {
+            NotificationCenter.default.addObserver(forName: UIApplication.willChangeStatusBarFrameNotification, object: nil, queue: .main) { [weak self] (notification) in
+                self?.applicationWillChangeStatusBarFrame(notification: notification)
+            }
         }
     }
     
@@ -289,10 +316,22 @@ private extension PerformanceView {
 
 private extension PerformanceView {
     func showViewAboveStatusBarIfNeeded() {
-        guard UIApplication.shared.applicationState == UIApplication.State.active, self.canBeVisible(), self.isHidden else {
+        guard UIApplication.shared.applicationState == UIApplication.State.active else {
             return
         }
-        self.isHidden = false
+        
+        // iOS 15+ requires special handling for window display
+        if #available(iOS 15.0, *) {
+            // Ensure window scene is properly set
+            if self.windowScene == nil {
+                self.windowScene = PerformanceView.keyWindowScene()
+            }
+            
+            // Force set window visible
+            self.isHidden = false
+        } else {
+            self.isHidden = false
+        }
     }
     
     func applicationVersion() -> String {
@@ -329,8 +368,23 @@ private extension PerformanceView {
     }
     
     func canBeVisible() -> Bool {
-        if let window = PerformanceView.keyWindow(), window.isKeyWindow, !window.isHidden {
-            return true
+        // Simplified visibility check - mainly check application state
+        if UIApplication.shared.applicationState == .active {
+            // Check windowScene state on iOS 15+
+            if #available(iOS 15.0, *) {
+                // If windowScene exists, check its state
+                if let windowScene = PerformanceView.keyWindowScene() {
+                    return windowScene.activationState == .foregroundActive
+                }
+                // If no windowScene but app is active, allow display
+                return true
+            } else {
+                // Check for iOS versions below 15
+                if let window = PerformanceView.keyWindow() {
+                    return !window.isHidden
+                }
+                return true
+            }
         }
         return false
     }
@@ -369,8 +423,30 @@ private extension PerformanceView {
     
     @available(iOS 13, *)
     class func keyWindowScene() -> UIWindowScene? {
-        return UIApplication.shared.connectedScenes
-            .filter { $0.activationState == .foregroundActive }
-            .first as? UIWindowScene
+        // Get all connected scenes
+        let connectedScenes = UIApplication.shared.connectedScenes
+        
+        // If no connected scenes, try to get from current key window
+        if connectedScenes.isEmpty {
+            if let keyWindow = PerformanceView.keyWindow(),
+               let windowScene = keyWindow.windowScene {
+                return windowScene
+            }
+            return nil
+        }
+        
+        // Prioritize foreground active scenes
+        let activeWindowScene = connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first { $0.activationState == .foregroundActive }
+        
+        if let activeScene = activeWindowScene {
+            return activeScene
+        }
+        
+        // If no active scene, return the first windowScene
+        return connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first
     }
 }
