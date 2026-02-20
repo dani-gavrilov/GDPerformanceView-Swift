@@ -29,7 +29,7 @@ internal class MarginLabel: UILabel {
     
     // MARK: Private Properties
     
-    private var edgeInsets = UIEdgeInsets.init(top: 0.0, left: 5.0, bottom: 0.0, right: 5.0)
+    private var edgeInsets = UIEdgeInsets.init(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
     
     // MARK: Properties Overriders
     
