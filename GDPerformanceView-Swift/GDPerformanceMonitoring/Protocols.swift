@@ -26,7 +26,7 @@ import UIKit
 public typealias MemoryUsage = (used: UInt64, total: UInt64)
 
 /// Performance report tuple. Contains CPU usage in percentages, FPS and memory usage.
-public typealias PerformanceReport = (cpuUsage: Double, fps: Int, memoryUsage: MemoryUsage)
+public typealias PerformanceReport = (cpuUsage: Double, fps: Int, memoryUsage: MemoryUsage, thermalState: String)
 
 /// Performance monitor delegate. Gets called on the main thread.
 public protocol PerformanceMonitorDelegate: class {
